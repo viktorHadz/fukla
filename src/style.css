@@ -163,11 +163,6 @@ html {
 .header__menu.transparent {
   color: white;
 }
-.menu__toggle {
-  color: white;
-  background-color: white;
-  padding: 20px 10px;
-}
 
 /* Nails */
 .nails__pricing {
@@ -371,7 +366,7 @@ html {
 
 /* Footer */
 .footer {
-  background: #292929;
+  background: var(--color-black);
   padding: 0 0 30px 0;
   font-size: 14px;
   margin-top: 20px;
@@ -379,7 +374,7 @@ html {
 .copyright {
   text-align: center;
   padding-top: 30px;
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 /*---------- BRAIDS ---------*/
@@ -688,11 +683,6 @@ a.instagram__button {
   margin-top: 40px;
 }
 
-/* Header Hamburger */
-.bm-overlay {
-  background: rgb(255, 255, 255) !important;
-}
-
 /* Makeup */
 
 /* Gallery */
@@ -938,6 +928,7 @@ a.instagram__button {
     width: 100%;
   }
   .header__menu {
+    color: var(--color-dark-white);
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -949,12 +940,17 @@ a.instagram__button {
   .menu__toggle__item {
     list-style-type: none;
   }
+  .menu__toggle__item:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 2px;
+    text-decoration-skip-ink: all;
+    text-decoration-color: var(--color-hot-pink);
+  }
   .menu__toggle__link {
-    color: var(--color-black);
     text-decoration: none;
     font-size: 22px;
   }
-
   .header {
     justify-content: space-between;
   }

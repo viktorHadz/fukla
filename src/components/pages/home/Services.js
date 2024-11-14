@@ -39,7 +39,7 @@ export const Services = () => {
           <div className="w-full md:w-1/3">
             <img
               className="w-2/3 xs:w-3/4 sm:w-3/4 md:w-full lg:w-5/6 h-auto object-cover rounded-md shadow-lg shadow-[#E95D7A] mx-auto"
-              src=""
+              src="/images/home/braid-thread.webp"
               alt="Hair Extensions"
             />
           </div>
@@ -72,7 +72,7 @@ export const Services = () => {
           <div className="w-full md:w-1/3">
             <img
               className="w-2/3 xs:w-3/4 sm:w-3/4 md:w-full lg:w-5/6 h-auto object-cover rounded-md shadow-lg shadow-[#E95D7A] mx-auto"
-              src="/"
+              src="/images/home/temp-tattoos.webp"
               alt="Temporary Tatoos"
             />
           </div>
@@ -100,7 +100,7 @@ export const Services = () => {
           </div>
         </div>
       </section>
-      {/* MARK: Makeup - REMOVE*/}
+      {/* MARK: Makeup - REMOVE
       <section className="w-full py-12 my-20 text-white apply-bg">
         <div className="flex flex-col items-center px-6 mx-auto md:flex-row-reverse md:items-start max-w-7xl sm:px-20 2xl:px-0 2xl:gap-16">
           <div className="w-full md:w-1/3">
@@ -132,6 +132,7 @@ export const Services = () => {
           </div>
         </div>
       </section>
+      */}
       {/* MARK: Nails */}
       <section className="w-full py-12 my-20 text-white apply-bg">
         <div className="flex flex-col items-center px-6 mx-auto md:flex-row md:items-start max-w-7xl sm:px-20 2xl:px-0 2xl:gap-16">
@@ -144,7 +145,7 @@ export const Services = () => {
           </div>
           <div className="w-3/4 mx-auto mt-6 md:w-2/3 md:pl-10 md:mt-0">
             <h2 className="mb-2 text-2xl font-semibold md:text-3xl underline-txt md:mb-4">
-              Маникюр
+              МаникюрPedikur
             </h2>
             <p className="mb-4 text-sm leading-relaxed md:text-base lg:text-lg md:mb-6">
               Маникюрът е като бижу за вашите ръце, той добавя блясък и красота

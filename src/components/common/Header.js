@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Menu } from "./Menu";
+
+
 export const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [transparent] = useState(0);

@@ -1,25 +1,27 @@
 // import { Swiper, SwiperSlide } from 'swiper/react';
 // import { Autoplay, Grid } from 'swiper';
 import { Link } from 'react-router-dom';
-// import 'swiper/css';
+import 'swiper/css';
 // import React, { useState, useEffect } from 'react';
 // import storage from '../../../firebase';
 
-export const NailsPortfolio = () => {
+export const ExtensionsPortfolio = () => {
   // const [imageUrls, setImageUrls] = useState([]);
   // const imageUrls = [1, 2];
 
-  // const imagesRef = storage.ref().child('nailsFeatured/');
+  // const imagesRef = storage.ref().child('makeupFeatured/');
 
   // useEffect(() => {
-  //   imagesRef.listAll().then(listResult => {
-  //     const urls = listResult.items.map(imageRef => imageRef.getDownloadURL());
+  //   imagesRef.listAll().then((listResult) => {
+  //     const urls = listResult.items.map((imageRef) =>
+  //       imageRef.getDownloadURL()
+  //     );
   //     Promise.all(urls).then(setImageUrls);
   //   });
   // }, []);
 
   return (
-    <section className='braidsportfolio__box'>
+    <>
       {/* <Swiper
         slidesPerView={2}
         grid={{
@@ -53,12 +55,12 @@ export const NailsPortfolio = () => {
       <div className='braidsportfolio__btn'>
         <Link
           to='/gallery'
-          state={{ folder: 'nails' }}
+          state={{ folder: 'makeup' }}
           className='braidsportfolio__gallery'
         >
           Цялостна галерия
         </Link>
       </div>
-    </section>
+    </>
   );
 };

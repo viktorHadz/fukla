@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
-import { Menu } from "./Menu";
-
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Menu } from './Menu';
 
 export const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -18,41 +17,48 @@ export const Header = () => {
       setScrollPosition(window.scrollY);
     }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   });
 
-  const holder = visibility ? "header nav__hidden" : "header";
+  const holder = visibility ? 'header nav__hidden' : 'header';
 
-  const navStyles = holder + (transparent ? " transparent" : "");
+  const navStyles = holder + (transparent ? ' transparent' : '');
 
-  const linkStyles = transparent ? "header__link transparent" : "header__link";
+  const linkStyles = transparent ? 'header__link transparent' : 'header__link';
 
-  const hamStyles = transparent ? "header__menu transparent" : "header__menu";
+  const hamStyles = transparent ? 'header__menu transparent' : 'header__menu';
 
   return (
     <header className={navStyles}>
-      <div className="header__logo">
-        <Link to="/" className="logo__link">
-          <h1 className="logo__text">
-            <span className="logo__text__span">F</span>ukla
+      <div className='header__logo'>
+        <Link to='/' className='logo__link'>
+          <h1 className='logo__text'>
+            <span className='logo__text__span'>F</span>
+            ukla
           </h1>
         </Link>
       </div>
 
-      <div className="header__links">
-        <Link to="/" className={linkStyles}>
+      <div className='header__links'>
+        <Link to='/' className={linkStyles}>
           Начало
         </Link>
-        <Link to="/braids" className={linkStyles}>
+        <Link to='/braids' className={linkStyles}>
           Плитки
         </Link>
         {/* <Link to="/makeup" className={linkStyles}>Грим</Link> */}
-        <Link to="/nails" className={linkStyles}>
-          Маникюр
+        <Link to='/nails' className={linkStyles}>
+          Нокти
+        </Link>
+        <Link to='/tattoo' className={linkStyles}>
+          Тату
+        </Link>
+        <Link to='/extensions' className={linkStyles}>
+          Аксесоари
         </Link>
       </div>
 

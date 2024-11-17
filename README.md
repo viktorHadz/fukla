@@ -2,4 +2,6 @@
 
 ### `npm start`
 
-<!-- Need firebase -->
+### Firebase instructions for SEO:
+
+### See Google Analytic implementation examples in App.js

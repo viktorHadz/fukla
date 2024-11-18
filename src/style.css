@@ -48,7 +48,7 @@ html {
   background: var(--color-black);
 }
 .slide-wrap-swipe {
-  @apply p-6;
+  @apply sm:p-6;
 }
 .slide__title {
   font-size: x-large;

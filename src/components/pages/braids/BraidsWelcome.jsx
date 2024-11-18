@@ -3,7 +3,7 @@ import { ExpandableText } from '../../common/ExpandableText';
 export const BraidsWelcome = () => {
   return (
     <section className='w-full' id='braids-welcome'>
-      <div className='flex flex-col justify-center p-6 text-center sm:p-12'>
+      <div className='flex flex-col justify-center justify-self-center  p-6 text-center 2xl:max-w-[50%] sm:p-12'>
         <span className='mb-2 text-2xl font-semibold text-center sm:text-4xl'>
           <span className='underline-txt'>ЗАЩО</span>{' '}
           <span className='underline-txt'>ПЛИТКИ?</span>

@@ -18,7 +18,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
 import { getAnalytics, logEvent } from 'firebase/analytics';
-import { getStorage, ref, listAll, getDownloadURL } from 'firebase/storage';
+import { getStorage, ref, list, getDownloadURL } from 'firebase/storage';
 
 // Firebase configuration
 const firebaseConfig = {
@@ -38,4 +38,4 @@ const analytics = getAnalytics(app);
 const storage = getStorage(app);
 console.log(storage);
 // Export analytics and storage for reuse
-export { analytics, storage, logEvent, listAll, ref, getDownloadURL };
+export { analytics, storage, logEvent, list, ref, getDownloadURL };

@@ -3,7 +3,7 @@ import { SliderStart } from './SliderStart';
 export const BraidsHero = () => {
   return (
     <>
-      <div className='hidden p-10 lg:flex bg-zinc-900'>
+      <div className='justify-center hidden p-4 md:p-10 sm:flex bg-zinc-900'>
         <div className='slide-wrap-swipe'>
           <img
             className='braidshero__image'
@@ -31,7 +31,7 @@ export const BraidsHero = () => {
           />
         </div>
       </div>
-      <div className='block lg:hidden'>
+      <div className='block sm:hidden'>
         <SliderStart />
       </div>
     </>

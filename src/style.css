@@ -53,16 +53,26 @@ html {
 .slide__title {
   font-size: x-large;
   text-align: center;
-  @apply mb-4 text-2xl text-center text-white underline-txt;
+  @apply text-2xl p-2 text-center text-white underline-txt;
 }
 .braidshero__image {
-  @apply flex h-auto justify-self-center w-80;
+  @apply flex h-auto justify-self-center self-center max-w-80 p-6;
 }
 .swiper-button-prev {
+  color: white !important;
+}
+.swiper-button-prev:hover {
   color: var(--color-hot-pink) !important;
+  scale: 120%;
+  transition-duration: 300ms;
 }
 .swiper-button-next {
+  color: white !important;
+}
+.swiper-button-next:hover {
   color: var(--color-hot-pink) !important;
+  scale: 120%;
+  transition-duration: 300ms;
 }
 
 .underline-txt {

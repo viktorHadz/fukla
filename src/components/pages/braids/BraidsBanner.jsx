@@ -5,7 +5,7 @@ export const BraidsBanner = () => {
     scrollToElement('braids-welcome');
   };
   return (
-    <div className='w-full h-[400px] md:h-[400px] lg:h-[600px] bg-zinc-950 relative overflow-hidden mt-20 cursor-default'>
+    <div className='w-full h-[500px] lg:h-[600px] xl:h-[700px] bg-zinc-950 relative overflow-hidden mt-20 cursor-default'>
       {/* Full-height centered image */}
       <div
         className='absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[50%] sm:w-[25%] bg-cover bg-center'
@@ -27,7 +27,7 @@ export const BraidsBanner = () => {
       <div className='relative z-10 grid h-full grid-cols-3 sm:grid-cols-5 '>
         {/* Left Logo */}
         <div className='items-center justify-center hidden col-span-1 sm:flex '>
-          <p className='mt-16 text-xl font-bold text-[#e95d7a] md:text-4xl lg:text-5xl 2xl:text-6xll'>
+          <p className='mt-16 text-xl font-bold text-[#e95d7a] md:text-4xl lg:text-5xl 2xl:text-6xl'>
             FUKLA
           </p>
         </div>
@@ -41,7 +41,7 @@ export const BraidsBanner = () => {
             БЪДИ СТИЛНА БЪДИ НЕПОВТОРИМА
           </p>
           <div
-            className='my-10 text-xs site-button xs:text-sm md:text-base lg:text-lg'
+            className='my-10 text-xs site-button xs:text-md md:text-xl lg:text-2xl'
             onClick={handleScroll}
           >
             <span>РАЗГЛЕДАЙ</span>

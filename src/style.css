@@ -44,20 +44,7 @@ html {
   z-index: 999;
   transition: transform 0.2s;
 }
-.swiper {
-  background: var(--color-black);
-}
-.slide-wrap-swipe {
-  @apply sm:p-6;
-}
-.slide__title {
-  font-size: x-large;
-  text-align: center;
-  @apply text-2xl p-2 text-center text-white underline-txt;
-}
-.braidshero__image {
-  @apply flex h-auto justify-self-center self-center max-w-80 p-6;
-}
+
 .swiper-button-prev {
   color: white !important;
 }

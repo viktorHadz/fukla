@@ -1,138 +1,62 @@
-// import { ExpandableText } from '../../common/ExpandableText';
-// // flex flex-col p-12 text-center lg:max-w-[50%] sm:p-12 xl:p-20
-// export const BraidsWelcome = () => {
-//   return (
-//     <section
-//       className='grid w-full h-auto grid-cols-1 p-8 md:grid-cols-2 md:p-12 xl:p-20'
-//       id='braids-welcome'
-//     >
-//       {/* Text Column */}
-//       <div className='flex flex-col justify-center p-4 text-center md:text-left md:p-8'>
-//         <span className='mb-6 text-2xl font-semibold sm:text-4xl'>
-//           <span className='underline-txt'>ЗАЩО</span>{' '}
-//           <span className='underline-txt'>ПЛИТКИ?</span>
-//         </span>
-//         <h2 className='mb-6 text-xl sm:text-2xl'>
-//           Удобство да се събуждаш красива.
-//         </h2>
-//         <p className='hidden md:block'>
-//           Сплитането на косата дава възможност да разполагаш с времето си за
-//           всичко останало. Едновременно постигаш промяна във визията си и
-//           мечтаната дълга коса. Плитката не е просто практичен начин да
-//           премахнете косата от лицето си, докато се опитвате да свършите всички
-//           задачи през горещия ден. Тя също е страхотен външен вид, когато бъде
-//           допълнена от по-официален тоалет. Блясък в очите, цвят в косите и
-//           усмивката е на лице!
-//         </p>
-//         <ExpandableText
-//           className='text-gray-900 md:hidden'
-//           buttonClass='text-[#E95D7A] md:hidden hover:underline'
-//           previewLines={3}
-//           expandedText='Виж по-малко'
-//           collapsedText='Виж повече'
-//         >
-//           Сплитането на косата дава възможност да разполагаш с времето си за
-//           всичко останало. Едновременно постигаш промяна във визията си и
-//           мечтаната дълга коса. Плитката не е просто практичен начин да
-//           премахнете косата от лицето си, докато се опитвате да свършите всички
-//           задачи през горещия ден. Тя също е страхотен външен вид, когато бъде
-//           допълнена от по-официален тоалет. Блясък в очите, цвят в косите и
-//           усмивката е на лице!
-//         </ExpandableText>
-//       </div>
-
-//       {/* Image Column */}
-//       <div className='relative flex items-center justify-center w-full'>
-//         <img
-//           className='object-contain h-auto rounded-md max-w-none'
-//           src='/images/braids/BraidsWhyBraids.webp'
-//           alt='Braided hairstyle'
-//           style={{
-//             width: '370px', // Match the intrinsic width
-//             height: 'auto',
-//           }}
-//         />
-//       </div>
-//     </section>
-//   );
-// };
 import { ExpandableText } from '../../common/ExpandableText';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; // Import Swiper styles
 import 'swiper/css/autoplay'; // Optional: For autoplay functionality
-import { Autoplay } from 'swiper/modules';
 
 export const BraidsWelcome = () => {
-  const images = [
-    'images/braids/braidsSwiper1.webp',
-    'images/braids/braidsSwiper2.webp',
-    'images/braids/braidsSwiper3.webp',
-    'images/braids/braidsSwiper4.webp',
-    'images/braids/braidsSwiper5.webp',
-  ];
-
   return (
-    <section
-      className='grid w-full h-auto grid-cols-1 p-8 md:grid-cols-2 md:p-12 xl:p-20'
-      id='braids-welcome'
-    >
-      {/* Text Column */}
-      <div className='flex flex-col justify-center p-4 text-center md:text-left md:p-8'>
-        <span className='mb-6 text-2xl font-semibold sm:text-4xl'>
-          <span className='underline-txt'>ЗАЩО</span>{' '}
-          <span className='underline-txt'>ПЛИТКИ?</span>
-        </span>
-        <h2 className='mb-6 text-xl sm:text-2xl'>
-          Удобство да се събуждаш красива.
-        </h2>
-        <p className='hidden md:block'>
-          Сплитането на косата дава възможност да разполагаш с времето си за
-          всичко останало. Едновременно постигаш промяна във визията си и
-          мечтаната дълга коса. Плитката не е просто практичен начин да
-          премахнете косата от лицето си, докато се опитвате да свършите всички
-          задачи през горещия ден. Тя също е страхотен външен вид, когато бъде
-          допълнена от по-официален тоалет. Блясък в очите, цвят в косите и
-          усмивката е на лице!
-        </p>
-        <ExpandableText
-          className='text-gray-900 md:hidden'
-          buttonClass='text-[#E95D7A] md:hidden hover:underline'
-          previewLines={3}
-          expandedText='Виж по-малко'
-          collapsedText='Виж повече'
-        >
-          Сплитането на косата дава възможност да разполагаш с времето си за
-          всичко останало. Едновременно постигаш промяна във визията си и
-          мечтаната дълга коса. Плитката не е просто практичен начин да
-          премахнете косата от лицето си, докато се опитвате да свършите всички
-          задачи през горещия ден. Тя също е страхотен външен вид, когато бъде
-          допълнена от по-официален тоалет. Блясък в очите, цвят в косите и
-          усмивката е на лице!
-        </ExpandableText>
-      </div>
+    <div className='relative w-full'>
+      {/* Background for large screens */}
+      <div className='absolute inset-0 hidden bg-white lg:block -z-10'></div>
 
-      {/* Swiper Column */}
-      <div className='relative flex items-center justify-center w-full'>
-        <Swiper
-          modules={[Autoplay]} // Enable autoplay module
-          autoplay={{
-            delay: 3000, // Auto-swipe every 3 seconds
-            disableOnInteraction: false,
+      {/* Content container */}
+      <div className='flex flex-col lg:flex-row lg:max-w-[70%] mx-auto items-center gap-6 px-6 py-12 lg:px-16'>
+        {/* Left Section: Image */}
+        <div
+          className='w-full lg:w-1/2 h-[200px] lg:h-[300px] 2xl:h-[450px] 4xl:h-[300px] bg-cover bg-center rounded-lg'
+          style={{
+            backgroundImage: "url('images/braids/braidsSwiper4.webp')", // Replace with your image path
           }}
-          loop={true} // Infinite looping
-          className='w-full max-w-full max-h-[700px] !bg-transparent rounded-md' // Set height and allow width to stretch
-        >
-          {images.map((image, index) => (
-            <SwiperSlide key={index}>
-              <img
-                src={image}
-                alt={`Braided hairstyle ${index + 1}`}
-                className='object-cover w-full max-h-[700px] rounded-md'
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        ></div>
+
+        {/* Right Section: Text */}
+        <div className='w-full p-6 text-center bg-[#18181b] rounded-lg shadow-md lg:p-12 lg:text-left lg:w-1/2'>
+          <h2 className='mb-4 text-2xl font-semibold text-white lg:text-3xl'>
+            Плитката като универсален стил
+          </h2>
+          <p className='hidden mb-4 text-lg text-gray-300 2xl:block'>
+            Плитките не са просто практично решение за премахване на косата от
+            лицето ви – те са начин да изразите стил и увереност. С тях печелите
+            време за важните неща, като едновременно постигате мечтаната визия и
+            дълга коса. Те безпроблемно преминават от ежедневна небрежност към
+            подчертана елегантност, допълвайки и най-официалния тоалет. Плитките
+            внасят блясък в очите ви, цвят в косите и подчертават вашата
+            естествена усмивка.
+            <br />
+            <span className='font-semibold'>
+              Оставете плитките да говорят за вашия стил!
+            </span>
+          </p>
+          <ExpandableText
+            className='block mb-4 text-lg text-gray-300 2xl:hidden'
+            previewLines={3}
+            buttonClass='mt-4 px-6 py-2 bg-white text-[#18181b] rounded-lg hover:bg-[#e95d7a] hover:text-white transition-all block 2xl:hidden'
+            expandedText='Виж по-малко'
+            collapsedText='Виж повече'
+          >
+            Плитките не са просто практично решение за премахване на косата от
+            лицето ви – те са начин да изразите стил и увереност. С тях печелите
+            време за важните неща, като едновременно постигате мечтаната визия и
+            дълга коса. Те безпроблемно преминават от ежедневна небрежност към
+            подчертана елегантност, допълвайки и най-официалния тоалет. Плитките
+            внасят блясък в очите ви, цвят в косите и подчертават вашата
+            естествена усмивка.
+            <br />
+            <span className='text-gray-200'>
+              Оставете плитките да говорят за вашия стил!
+            </span>
+          </ExpandableText>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };

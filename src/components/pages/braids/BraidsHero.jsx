@@ -4,11 +4,11 @@ export const BraidsHero = () => {
   return (
     <>
       {/* Card Grid Visible on medium and larger screens */}
-      <div className='justify-center hidden p-4 md:p-10 sm:flex bg-zinc-900'>
+      <div className='justify-around hidden p-4 md:p-10 lg:p-14 xl:p-16 sm:flex bg-zinc-900'>
         {[1, 2, 3].map((process) => (
           <div
             key={`process-${process}`}
-            className='relative h-auto mx-4 overflow-hidden transition duration-300 rounded-md max-w-96 group hover:scale-105'
+            className='relative h-auto mx-4 overflow-hidden transition duration-300 rounded-md max-w-96 group hover:scale-105 '
           >
             {/* Background Image */}
             <img

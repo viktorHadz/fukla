@@ -8,7 +8,7 @@ export const BraidsHero = () => {
         {[1, 2, 3].map((process) => (
           <div
             key={`process-${process}`}
-            className='relative h-auto mx-4 overflow-hidden transition duration-300 rounded-md max-w-96 group hover:scale-105 '
+            className='relative h-auto mx-4 overflow-hidden transition duration-300 rounded-md max-w-96 group hover:scale-105'
           >
             {/* Background Image */}
 

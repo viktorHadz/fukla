@@ -1,5 +1,4 @@
 // import { ExpandableText } from '../../common/ExpandableText';
-
 export const BraidsDivider = () => {
   return (
     <div className='relative w-full'>
@@ -7,55 +6,120 @@ export const BraidsDivider = () => {
       <div className='absolute inset-0 hidden bg-white lg:block -z-10'></div>
 
       {/* Content container */}
-      <div className='flex flex-col lg:flex-row lg:max-w-[70%] mx-auto items-center gap-6 px-6 py-12 lg:px-16'>
-        {/* Card 1 */}
-        <div className='w-full lg:w-1/3 p-6 bg-[#18181b] rounded-lg shadow-md text-center'>
-          <div
-            className='h-[200px] lg:h-[300px] bg-cover bg-center rounded-md mb-4'
-            style={{
-              backgroundImage: "url('images/braids/braidsSwiper1.webp')", // Replace with your image path
-            }}
-          ></div>
-          <h2 className='mb-2 text-xl font-semibold text-white'>За Мен</h2>
-          <p className='text-gray-300'>
-            Открийте как плитките могат да преобразят вашата визия и да
-            подчертаят естествената ви красота.
-          </p>
+      <div className='relative flex flex-col items-center gap-6 px-6 py-12 mx-auto lg:px-16'>
+        {/* For small screens, display cards in a column */}
+        <div className='flex flex-col w-full gap-6 lg:hidden'>
+          {/* Card 1 */}
+          <div className='w-full p-6 bg-[#18181b] rounded-lg shadow-md text-center'>
+            <div
+              className='h-[200px] bg-cover bg-center rounded-md mb-4'
+              style={{
+                backgroundImage: "url('images/braids/braidsSwiper1.webp')",
+              }}
+            ></div>
+            <h2 className='mb-2 text-xl font-semibold text-white'>За Мен</h2>
+            <p className='text-gray-300'>
+              Открийте как плитките могат да преобразят вашата визия и да
+              подчертаят естествената ви красота.
+            </p>
+          </div>
+
+          {/* Card 2 */}
+          <div className='w-full p-6 bg-[#18181b] rounded-lg shadow-md text-center'>
+            <div
+              className='h-[200px] bg-cover bg-center rounded-md mb-4'
+              style={{
+                backgroundImage: "url('images/braids/braidsSwiper2.webp')",
+              }}
+            ></div>
+            <h2 className='mb-2 text-xl font-semibold text-white'>Ценоразпис</h2>
+            <p className='text-gray-300'>
+              От ежедневна небрежност до официален блясък – плитките са вашето
+              универсално решение.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div className='w-full p-6 bg-[#18181b] rounded-lg shadow-md text-center'>
+            <div
+              className='h-[200px] bg-cover bg-center rounded-md mb-4'
+              style={{
+                backgroundImage: "url('images/braids/braidsSwiper3.webp')",
+              }}
+            ></div>
+            <h2 className='mb-2 text-xl font-semibold text-white'>
+              Незабравим Стил
+            </h2>
+            <p className='text-gray-300'>
+              Плитките подчертават усмивката ви и придават блясък на всеки момент
+              от деня.
+            </p>
+          </div>
         </div>
 
-        {/* Card 2 */}
-        <div className='w-full lg:w-1/3 p-6 bg-[#18181b] rounded-lg shadow-md text-center'>
+        {/* For large screens, display cards as a deck */}
+        <div className='relative hidden w-full h-[600px] items-center lg:flex'>
+          {/* Card 1 */}
           <div
-            className='h-[200px] lg:h-[300px] bg-cover bg-center rounded-md mb-4'
-            style={{
-              backgroundImage: "url('images/braids/braidsSwiper2.webp')", // Replace with your image path
-            }}
-          ></div>
-          <h2 className='mb-2 text-xl font-semibold text-white'>Ценоразпис</h2>
-          <p className='text-gray-300'>
-            От ежедневна небрежност до официален блясък – плитките са вашето
-            универсално решение.
-          </p>
-        </div>
+            className='absolute w-[300px]  p-6 bg-[#18181b] rounded-lg shadow-md text-center transform -rotate-6 transition-transform duration-300 hover:rotate-0  cursor-pointer hover:scale-110 hover:bg-[#e95d7a] border hover:left-0'
+            style={{ left: '20%', top: '10%', zIndex: 1 }}
+          >
+            <div
+              className='h-[300px] bg-cover bg-center rounded-md mb-4'
+              style={{
+                backgroundImage: "url('images/braids/braidsSwiper1.webp')",
+              }}
+            ></div>
+            <h2 className='mb-2 text-xl font-semibold text-white'>За Мен</h2>
+            <p className='text-gray-300'>
+              Открийте как плитките могат да преобразят вашата визия и да
+              подчертаят естествената ви красота.
+            </p>
+          </div>
 
-        {/* Card 3 */}
-        <div className='w-full lg:w-1/3 p-6 bg-[#18181b] rounded-lg shadow-md text-center'>
+          {/* Card 2 - central card */}
           <div
-            className='h-[200px] lg:h-[300px] bg-cover bg-center rounded-md mb-4'
-            style={{
-              backgroundImage: "url('images/braids/braidsSwiper3.webp')", // Replace with your image path
-            }}
-          ></div>
-          <h2 className='mb-2 text-xl font-semibold text-white'>
-            Незабравим Стил
-          </h2>
-          <p className='text-gray-300'>
-            Плитките подчертават усмивката ви и придават блясък на всеки момент
-            от деня.
-          </p>
+            className='absolute w-[300px] h-[600px]  p-6 bg-[#18181b] rounded-lg shadow-md text-center transition-transform duration-300 hover:scale-110 hover:bg-[#e95d7a] border cursor-pointer'
+            style={{ left: '35%', top: '0%', zIndex: 2 }}
+          >
+            <div
+              className='h-[300px] bg-cover bg-center rounded-md mb-4'
+              style={{
+                backgroundImage: "url('images/braids/braidsSwiper2.webp')",
+              }}
+            ></div>
+            <h2 className='mb-2 text-xl font-semibold text-white'>Ценоразпис</h2>
+            <p className='text-gray-300'>
+              От ежедневна небрежност до официален блясък – плитките са вашето
+              универсално решение.
+            </p>
+          </div>
+
+          {/* Card 3 */}
+          <div
+            className='absolute w-[300px]  p-6 bg-[#18181b] rounded-lg shadow-md text-center transform rotate-6 transition-transform duration-300 hover:rotate-0  cursor-pointer hover:scale-110 hover:bg-[#e95d7a] border'
+            style={{ left: '50%', top: '10%', zIndex: 1 }}
+          >
+            <div
+              className='h-[300px] bg-cover bg-center rounded-md mb-4'
+              style={{
+                backgroundImage: "url('images/braids/braidsSwiper3.webp')",
+              }}
+            ></div>
+            <h2 className='mb-2 text-xl font-semibold text-white'>
+              Незабравим Стил
+            </h2>
+            <p className='text-gray-300'>
+              Плитките подчертават усмивката ви и придават блясък на всеки момент
+              от деня.
+            </p>
+          </div>
         </div>
       </div>
     </div>
+  );
+};
+
 
     // <div className='flex flex-col justify-center justify-self-center  p-6 text-center 2xl:max-w-[50%] sm:p-12'>
     //   <span className='mb-2 text-2xl font-semibold text-center sm:text-4xl '>
@@ -91,5 +155,3 @@ export const BraidsDivider = () => {
     //     най-важното е, че ще ви изпратя с хиляди плитки и усмивки на лице!
     //   </ExpandableText>
     // </div>
-  );
-};

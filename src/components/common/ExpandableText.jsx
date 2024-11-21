@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export const ExpandableText = ({
   children,
@@ -9,24 +9,19 @@ export const ExpandableText = ({
   collapsedText = 'Show More',
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [contentHeight, setContentHeight] = useState(0);
-  const contentRef = useRef(null);
 
-  useEffect(() => {
-    if (contentRef.current) {
-      setContentHeight(isExpanded ? contentRef.current.scrollHeight : 0);
-    }
-  }, [isExpanded, children]);
+  // Calculate the preview height based on line count
+  const previewHeight = `calc(${previewLines} * 1.5rem)`; // Adjust based on your text line-height
 
   return (
-    <div className='relative'>
+    <div className={`relative ${className}`}>
       <div
-        ref={contentRef}
-        className={`overflow-hidden transition-all duration-300 ${className}`}
+        className={`transition-all duration-300 ${
+          isExpanded ? 'overflow-y-scroll' : 'overflow-hidden'
+        }`}
         style={{
-          height: isExpanded
-            ? `${contentHeight}px`
-            : `calc(${previewLines} * 1.5rem)`,
+          maxHeight: isExpanded ? '270px' : previewHeight,
+
         }}
       >
         {children}

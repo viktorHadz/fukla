@@ -29,7 +29,70 @@ html {
   @apply px-4 py-2 font-bold text-white transition-colors duration-100 ease-in-out border border-white rounded-md cursor-pointer;
   @apply hover:bg-[#e95d7a] hover:border-[#e95d7a];
 }
-/* Header */
+
+/* MARK: Hover Cards */
+/* Handles hover jiggle for cards */
+.card-left::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -120px;
+  bottom: -35px;
+  left: -20px;
+  z-index: -10;
+}
+.card-right::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -35px;
+  left: -120px;
+  z-index: -10;
+}
+/* Hide default scrollbar */
+/* Default scrollbar hidden (set opacity to 0) */
+.card-center div.overflow-y-scroll::-webkit-scrollbar,
+.card-left div.overflow-y-scroll::-webkit-scrollbar,
+.card-right div.overflow-y-scroll::-webkit-scrollbar {
+  width: 8px; /* Ensure scrollbar exists */
+  transition: opacity 0.3s ease;
+}
+.card-center div.overflow-y-scroll::-webkit-scrollbar-thumb,
+.card-left div.overflow-y-scroll::-webkit-scrollbar-thumb,
+.card-right div.overflow-y-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+.card-center div.overflow-y-scroll::-webkit-scrollbar-track,
+.card-left div.overflow-y-scroll::-webkit-scrollbar-track,
+.card-right div.overflow-y-scroll::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* Show scrollbar on hover */
+.card-center:hover div.overflow-y-scroll::-webkit-scrollbar,
+.card-left:hover div.overflow-y-scroll::-webkit-scrollbar,
+.card-right:hover div.overflow-y-scroll::-webkit-scrollbar {
+  opacity: 1; /* Make scrollbar visible */
+}
+
+/* MARK:EPANDABLE SCROLLBAR *
+/* - unfortunate duplication leaving, in a hurry  */
+/* Custom scrollbar for dynamic overflow-y-scroll */
+.expandable-text-content::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.expandable-text-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); /* Thumb color */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.expandable-text-content::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Track color */
+}
+
+/* MARK: Header */
 .header {
   top: 0;
   left: 0;

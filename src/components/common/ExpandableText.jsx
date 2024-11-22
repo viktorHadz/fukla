@@ -7,16 +7,22 @@ export const ExpandableText = ({
   previewLines = 3,
   expandedText = 'Show Less',
   collapsedText = 'Show More',
+  onToggle = () => {},
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   // Calculate the preview height based on line count
-  const previewHeight = `calc(${previewLines} * 1.5rem)`; // Adjust based on your text line-height
+  const previewHeight = `calc(${previewLines} * 1.5rem)`;
 
+  const toggleExpanded = () => {
+    const newState = !isExpanded;
+    setIsExpanded(newState);
+    onToggle(newState); 
+  };
   return (
     <div className={`relative ${className}`}>
       <div
-        className={`transition-all duration-300 ${
+        className={`transition-all duration-300 expandable-text-content ${
           isExpanded ? 'overflow-y-scroll' : 'overflow-hidden'
         }`}
         style={{
@@ -27,8 +33,8 @@ export const ExpandableText = ({
         {children}
       </div>
       <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className={`mt-2 ${buttonClass}`}
+        onClick={toggleExpanded}
+        className={`${buttonClass}`}
       >
         {isExpanded ? expandedText : collapsedText}
       </button>

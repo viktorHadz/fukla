@@ -25,7 +25,13 @@ html {
 .apply-bg {
   background-color: #18181b;
 }
+
+.site-button-alt {
+  @apply p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all
+}
+
 .site-button {
+
   @apply px-4 py-2 font-bold text-white transition-colors duration-100 ease-in-out border border-white rounded-md cursor-pointer;
   @apply hover:bg-[#e95d7a] hover:border-[#e95d7a];
 }
@@ -134,37 +140,37 @@ html {
 }
 
 /* MARK: BANNER START */
-.banner-content {
+/* .banner-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   z-index: 2;
   color: var(--color-white);
-}
+} */
 
-.banner-image {
+/* .banner-image {
   width: 340px;
   max-width: 420;
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
   object-fit: contain;
   max-height: 100%;
   bottom: 0;
-}
+} */
 
-.banner-logo {
+/* .banner-logo {
   font-size: 6em;
   color: var(--color-hot-pink);
   font-weight: bold;
   text-shadow: 0.2rem 0.2rem 0.5rem var(--color-black);
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-}
+} */
 
-.quote-text-accent {
+/* .quote-text-accent {
   color: var(--color-hot-pink);
   font-weight: bold;
-}
+} */
 
 /*  MARK: BANER END*/
 /*  3*/
@@ -262,7 +268,7 @@ a.instagram__button {
 
 /* MARK: BREAKPOINTS */
 /* laptop */
-@media (max-width: 1280px) {
+/* @media (max-width: 1280px) {
   .banner-image {
     width: 300px;
     height: auto;
@@ -278,19 +284,19 @@ a.instagram__button {
   .text-under-logo {
     font-size: 2.5em;
   }
-}
+} */
 /* Tablet breakpoint */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .banner-image {
     max-width: 280px !important;
     height: auto;
     bottom: 0;
   }
-}
+} */
 
 /* Mobile breakpoint */
 @media (max-width: 768px) {
-  .banner-image {
+  /* .banner-image {
     width: 230px;
     height: auto;
     bottom: 0;
@@ -300,7 +306,7 @@ a.instagram__button {
   }
   .text-under-logo {
     font-size: 2em;
-  }
+  } */
   .header__menu {
     color: var(--color-dark-white);
     display: flex;
@@ -334,9 +340,9 @@ a.instagram__button {
 }
 /* Fix breakpoint */
 @media (max-width: 640px) {
-  .banner-image {
+  /* .banner-image {
     width: 280px;
     height: auto;
     bottom: 0;
-  }
+  } */
 }

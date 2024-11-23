@@ -16,7 +16,7 @@ export const BraidsWelcome = () => {
         {/* Box 1 */}
         <div className='p-4 text-white rounded-md'>
           {/* Text */}
-          <div className='w-full p-4 bg-[#18181b] rounded-lg shadow-md text-center'>
+          <div className='w-full p-4 bg-[#18181b] rounded-lg shadow-md text-center' id='take-look'>
             <h2 className='mb-4 text-xl font-semibold'>
               Плитката като универсален стил
             </h2>
@@ -99,7 +99,7 @@ export const BraidsWelcome = () => {
       </div>
 
       {/* MARK: Desktop Box 1 */}
-      <div className='w-full sm:w-[80%] pt-16 hidden sm:flex sm:flex-col items-center justify-self-center'>
+      <div id='take-a-look-desktop' className='w-full sm:w-[80%] pt-16 hidden sm:flex sm:flex-col items-center justify-self-center'>
         {/* Text and Image Container 1*/}
         <div className='relative flex items-center justify-start'>
           {/* Text Section */}
@@ -161,7 +161,7 @@ export const BraidsWelcome = () => {
           <ExpandableText
             className='block mb-4 text-lg text-gray-300'
             previewLines={3}
-            buttonClass='px-4 py-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
+            buttonClass='mt-4 py-2 px-4 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
             expandedText='Виж по-малко'
             collapsedText='Виж повече'
             onToggle={(state) => setIsSideSmallExpanded(state)}
@@ -196,16 +196,16 @@ export const BraidsWelcome = () => {
           <div className='relative flex justify-end w-full'>
             {/* Text Section */}
             <div
-              className='relative z-10 w-1/2 p-4 sm:p-6 bg-[#18181b] text-white rounded-lg shadow-lg'
+              className='relative z-10 w-1/2 p-6 bg-[#18181b] text-white rounded-lg shadow-lg'
               style={{ minHeight: '250px' }}
             >
-              <h2 className='mb-4 text-xl font-semibold sm:text-2xl lg:text-3xl'>
+              <h2 className='text-xl font-semibold sm:2xl'>
                 Плитката като универсален стил
               </h2>
               <ExpandableText
-                className='block mb-4 text-lg text-gray-300'
+                className='block my-4 text-lg text-gray-300'
                 previewLines={3}
-                buttonClass='px-4 py-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
+                buttonClass='px-4 py-2 mt-4 text-sm sm:text-md bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
                 expandedText='Виж по-малко'
                 collapsedText='Виж повече'
                 onToggle={(state) => setIsLowerExpanded(state)}

@@ -2,17 +2,31 @@ import { scrollToElement } from '../../common/scrollToElement';
 
 export const BraidsBanner = () => {
   const handleScroll = () => {
-    scrollToElement('braids-welcome');
+    const desktop = document.getElementById('take-a-look-desktop');
+    const mobile = document.getElementById('take-look');
+  
+    if (desktop && desktop.offsetParent !== null) {
+      scrollToElement('take-a-look-desktop');
+    }
+    else if (mobile && mobile.offsetParent !== null) {
+      scrollToElement('take-look');
+    } else {
+      console.error('No visible element to scroll to');
+    }
   };
 
   return (
     <div className='w-full h-[400px] lg:h-[500px] bg-zinc-900 relative overflow-hidden mt-20 cursor-default flex items-center justify-center'>
       {/* Background Image */}
       <div
-        className='absolute top-0 left-0 w-full h-full mb-10 bg-center'
+        className='absolute top-0 flex w-[30%] h-full mb-10 bg-center'
         style={{
           backgroundImage: `url('images/home/braid-thread.webp')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
           opacity: '50%',
+          loading: 'eager'
         }}
       >
         <div

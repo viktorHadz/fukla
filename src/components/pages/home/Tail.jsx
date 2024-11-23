@@ -1,44 +1,42 @@
+import { scrollToElement } from "../../common/scrollToElement";
 export const Tails = () => {
+  const handleScroll = () => {
+    scrollToElement('what-we-offer');
+  };
   return (
-    <div className='relative flex justify-around px-6 pt-4 pb-0 overflow-hidden xs:pt-12 sm:pt-24 bg-zinc-950 isolate lg:px-16'>
-      <div className='grid w-full grid-cols-1 sm:grid-cols-2'>
-        {/* Col 1 - Banner logo */}
-        <div className='flex items-end justify-center ml-0 sm:items-center sm:row-span-2 sm:ml-20'>
-          <div className='flex flex-col justify-center space-y-4 text-center banner-content banner-text sm:justify-start sm:text-left xs:space-y-6'>
-            <h1 className='text-4xl font-extrabold banner-logo xs:text-5xl md:text-6xl lg:text-7xl'>
-              <span className='text-hot-pink'>F</span>ukla
-            </h1>
-            <span className='space-y-2'>
-              <p className='text-base font-semibold text-left text-under-logo xs:text-lg sm:text-xl md:text-2xl lg:text-3xl'>
-                Красота с характер
-              </p>
-              <p className='text-sm italic text-left quote-text xs:text-base sm:text-lg md:text-xl lg:text-2xl'>
-                - "Бъди{' '}
-                <span className='quote-text-accent text-hot-pink'>дръзка</span>,
-                бъди{' '}
-                <span className='quote-text-accent text-hot-pink'>
-                  уникална
-                </span>
-                , бъди
-                <span className='quote-text-accent text-hot-pink'> Фукла</span>
-                !"
-              </p>
-            </span>
-            <div className='text-xs site-button xs:text-sm md:text-base lg:text-lg'>
-              <span>РАЗГЛЕДАЙ</span>
-            </div>
+    <div className='relative flex justify-around pt-4 pb-0 overflow-hidden h-[400px] lg:h-[500px] xs:pt-12 sm:pt-24 bg-zinc-900 isolate'>
+      <div className='flex flex-col justify-around w-full sm:flex sm:flex-row'>
+        {/*1 - Banner logo */}
+        <div className='flex flex-col justify-center text-center text-white sm:text-left'>
+          <h1 className='text-[#e95d7a] text-6xl font-extrabold hidden lg:block'>
+            <span className='text-hot-pink'>F</span>ukla
+          </h1>
+          <span className='my-4'>
+            <p className='text-4xl font-semibold '>
+              Красота с характер
+            </p>
+            <p className='text-sm italic quote-text xs:text-base sm:text-lg md:text-xl lg:text-2xl'>
+              - "Бъди <span className='text-[#e95d7a]'>дръзка</span>, бъди{' '}
+              <span className='text-[#e95d7a]'>уникална</span>, бъди
+              <span className='text-[#e95d7a]'> Фукла</span>
+              !"
+            </p>
+          </span>
+          <div>
+          <button onClick={handleScroll} className='text-xs site-button-alt xs:text-sm md:text-base lg:text-lg'>
+            РАЗГЛЕДАЙ
+          </button>
           </div>
         </div>
 
-        {/* Col 2 - Banner Image */}
-        <div className='flex justify-center ml-20 mr-0 lg:mr-20 lg:ml-0 sm:row-span-2'>
-          <div className='relative'>
+        {/*2 - Banner Image */}
+        <div className='flex justify-end'>
             <img
               src='images/home/small-banner-image.webp'
-              className='object-contain w-40 banner-image xs:w-48 sm:w-64 md:w-80 lg:w-96'
+              className='absolute object-contain -bottom-10 xs:w-40 sm:w-48 lg:w-64 2xl:w-72'
               alt='Right-side banner'
+              loading="eager"
             />
-          </div>
         </div>
 
         {/* Gradients */}

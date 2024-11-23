@@ -1,6 +1,6 @@
 export const OurServices = () => {
   return (
-    <section className='flex flex-col items-center w-full p-12 sm:p-18'>
+    <section className='flex flex-col items-center w-full p-12 sm:p-18' id='what-we-offer'>
       <h2 className='mb-12 text-4xl text-center underline-txt md:text-5xl sm:mb-10'>
         Какво предлагаме?
       </h2>

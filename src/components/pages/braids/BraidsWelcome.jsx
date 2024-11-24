@@ -1,239 +1,165 @@
 import { useState } from 'react';
-import { ExpandableText } from '../../common/ExpandableText';
-import { ExpandableTextMobile } from '../../common/ExpandableText';
-
+import { DesktopCard } from '../../common/DesktopCardWelcome';
+import { DesktopCardSplit } from '../../common/DesktopCardWelcome';
+import { MobileCard } from '../../common/MobileCardWelcome';
 export const BraidsWelcome = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [isLowerExpanded, setIsLowerExpanded] = useState(false);
-  const [isSideSmallExpanded, setIsSideSmallExpanded] = useState(false);
-  const [isMobileExpanded, setIsMobileExpanded] = useState(false);
-  const [isLowerMobileExpanded, setIsMobileLowerExpanded] = useState(false);
-
+  const [isExpanded2, setIsExpanded2] = useState(false);
+  const [isExpanded3, setIsExpanded3] = useState(false);
   return (
     <>
-      {/* Mobile Layout sm:hidden */}
-      <div className='flex flex-col w-full gap-4 sm:hidden'>
-        {/* Box 1 */}
-        <div className='p-4 text-white rounded-md'>
-          {/* Text */}
-          <div className='w-full p-4 bg-[#18181b] rounded-lg shadow-md text-center' id='take-look'>
-            <h2 className='mb-4 text-xl font-semibold'>
-              Плитката като универсален стил
-            </h2>
-            <ExpandableTextMobile
-              className='block mb-4 text-sm text-gray-300'
-              previewLines={2.5}
-              buttonClass='mt-4 p-2 text-sm bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
-              expandedText='Виж по-малко'
-              collapsedText='Виж повече'
-              onToggle={(state) => setIsMobileExpanded(state)}
-            >
-              Плитките не са просто практично решение за премахване на косата от
-              лицето ви – те са начин да изразите стил и увереност. С тях
-              печелите време за важните неща, като едновременно постигате
-              мечтаната визия и дълга коса. Те безпроблемно преминават от
-              ежедневна небрежност към подчертана елегантност, допълвайки и
-              най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в
-              косите и подчертават вашата естествена усмивка.
-              <br />
-              <span className='text-gray-200'>
-                Оставете плитките да говорят за вашия стил!
-              </span>
-            </ExpandableTextMobile>
-          </div>
-
-          {/* Image */}
-          <div
-            className={`w-full mt-4 rounded-lg shadow-md transition-all duration-500 overflow-hidden ${
-              isMobileExpanded ? 'h-60' : 'h-0'
-            }`}
-            style={{
-              backgroundImage: "url('images/braids/braidsSwiper4.webp')",
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          ></div>
+      <div className='bg-white-gradient'>
+        {/* MARK: Mobile LAYOUT */}
+        <div className='flex flex-col w-full gap-4 p-12 sm:hidden'>
+          {/* Mobile Card 1 */}
+          <MobileCard
+            isExpanded={true}
+            bgClass='bg-dark-gradient'
+            textClass='text-white'
+            titleClass='text-white'
+            title='Класическа Плитка'
+            idName='take-look'
+            content='Плитките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност. С тях печелите време за важните неща, като едновременно постигате мечтаната визия и дълга коса. Те безпроблемно преминават от ежедневна небрежност към подчертана елегантност, допълвайки и най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в косите и подчертават вашата естествена усмивка.'
+            imageUrl='images/braids/braidsSwiper4.webp'
+          />
+          {/* Mobile Card 2 */}
+          <MobileCard
+            bgClass='bg-dark-gradient'
+            textClass='text-white'
+            titleClass='text-white'
+            title='Боксьорските плитки'
+            content='Боксьорските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор за активни хора и любители на съвременния стил. Те съчетават спортен дух с елегантност и са подходящи както за ежедневие, така и за специални събития. На изображението са показани две боксьорски плитки, които започват от корените на косата и са сплетени стегнато по дължината на главата. Това е визия, която комбинира практичност и модерен стил, подчертавайки структурата на косата и симетрията.'
+            imageUrl='images/braids/braidsSwiper4.webp'
+          />
+          {/* Mobile Card 3 */}
+          <MobileCard
+            bgClass='bg-dark-pink-gradient'
+            textClass='text-white'
+            titleClass='text-white'
+            title='Опашка от пълзящи плитки'
+            content='Плитките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност. С тях печелите време за важните неща, като едновременно постигате мечтаната визия и дълга коса. Те безпроблемно преминават от ежедневна небрежност към подчертана елегантност, допълвайки и най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в косите и подчертават вашата естествена усмивка.'
+            imageUrl='images/braids/braidsSwiper4.webp'
+          />
+          {/* Mobile Card 4 */}
+          <MobileCard
+            bgClass='bg-dark-pink-gradient'
+            textClass='text-white'
+            titleClass='text-white'
+            title='Къдрици'
+            content='Плитките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност. С тях печелите време за важните неща, като едновременно постигате мечтаната визия и дълга коса. Те безпроблемно преминават от ежедневна небрежност към подчертана елегантност, допълвайки и най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в косите и подчертават вашата естествена усмивка.'
+            imageUrl='images/braids/braidsSwiper4.webp'
+          />
+          {/* Mobile Card 5 */}
+          <MobileCard
+            bgClass='bg-dark-pink-gradient'
+            textClass='text-white'
+            titleClass='text-white'
+            title='Туистъри'
+            content='Плитките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност. С тях печелите време за важните неща, като едновременно постигате мечтаната визия и дълга коса. Те безпроблемно преминават от ежедневна небрежност към подчертана елегантност, допълвайки и най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в косите и подчертават вашата естествена усмивка.'
+            imageUrl='images/braids/braidsSwiper4.webp'
+          />
+          {/* Mobile Card 6 */}
+          <MobileCard
+            bgClass='bg-pink-gradient'
+            textClass='text-zinc-800'
+            titleClass='text-zinc-800'
+            title='Африканска Плитка'
+            content='Плитките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност. С тях печелите време за важните неща, като едновременно постигате мечтаната визия и дълга коса. Те безпроблемно преминават от ежедневна небрежност към подчертана елегантност, допълвайки и най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в косите и подчертават вашата естествена усмивка.'
+            imageUrl='images/braids/braidsSwiper4.webp'
+          />
+          {/* Mobile Card 7 */}
+          <MobileCard
+            bgClass='bg-pink-gradient'
+            textClass='text-zinc-800'
+            titleClass='text-zinc-800'
+            title='По-ваше Желание'
+            content='Плитките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност. С тях печелите време за важните неща, като едновременно постигате мечтаната визия и дълга коса. Те безпроблемно преминават от ежедневна небрежност към подчертана елегантност, допълвайки и най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в косите и подчертават вашата естествена усмивка.'
+            imageUrl='images/braids/braidsSwiper4.webp'
+          />
         </div>
 
-        {/* Box 2 */}
-        <div className='p-4 text-white rounded-md'>
-          {/* Text */}
-          <div className='w-full p-4 bg-[#18181b] rounded-lg shadow-md text-center'>
-            <h2 className='mb-4 text-xl font-semibold'>
-              Плитката като универсален стил
-            </h2>
-            <ExpandableTextMobile
-              className='block mb-4 text-sm text-gray-300'
-              previewLines={2.5}
-              buttonClass='mt-4 p-2 text-sm bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
-              expandedText='Виж по-малко'
-              collapsedText='Виж повече'
-              onToggle={(state) => setIsMobileLowerExpanded(state)}
-            >
-              Плитките не са просто практично решение за премахване на косата от
-              лицето ви – те са начин да изразите стил и увереност. С тях
-              печелите време за важните неща, като едновременно постигате
-              мечтаната визия и дълга коса. Те безпроблемно преминават от
-              ежедневна небрежност към подчертана елегантност, допълвайки и
-              най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в
-              косите и подчертават вашата естествена усмивка.
-              <br />
-              <span className='text-gray-200'>
-                Оставете плитките да говорят за вашия стил!
-              </span>
-            </ExpandableTextMobile>
-          </div>
+        {/* MARK: Desktop LAYOUT */}
+        {/* First Desktop Card 3/7*/}
+        <DesktopCard
+          title='Класическа Плитка'
+          content='Плитките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност...'
+          imageUrl='images/braids/braidsSwiper4.webp'
+          bgClass='bg-dark-gradient'
+          textColorClass='text-white'
+          buttonClass='mt-4 p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
+          initialImagePosition='right'
+          idName='take-a-look-desktop'
+          previewLines={3}
+          isExpanded={isExpanded}
+          setIsExpanded={setIsExpanded}
+          maxExpandedHeight='150px' //
+        />
 
-          {/* Image */}
-          <div
-            className={`w-full mt-4 rounded-lg shadow-md transition-all duration-500 overflow-hidden ${
-              isLowerMobileExpanded ? 'h-60' : 'h-0'
-            }`}
-            style={{
-              backgroundImage: "url('images/braids/braidsSwiper4.webp')",
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          ></div>
-        </div>
-      </div>
+        {/* First Split Desktop Card */}
+        <DesktopCardSplit
+          leftTitle='Боксьорски плитки'
+          leftContent='Боксьорските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор... орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор..'
+          leftImageUrl='images/braids/braidsSwiper4.webp'
+          rightTitle='Опашка от пълзящи плитки'
+          rightContent='Плитките не са просто практично решение за премахване на косата от лицето ви... ксьорските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор... орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орскит ксьорските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор... орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орскит'
+          rightImageUrl='images/braids/braidsSwiper4.webp'
+          leftBgClass='bg-dark-gradient'
+          rightBgClass='bg-dark-gradient'
+          leftTextColorClass='text-white'
+          rightTextColorClass='text-white'
+          previewLines={3}
+          isExpanded={isExpanded}
+          maxExpandedHeight='300px' // Adjust as needed
+        />
+        {/* 6/7 Elements */}
+        <DesktopCard
+          title='Класическа Плитка'
+          content='Плитките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност...'
+          imageUrl='images/braids/braidsSwiper4.webp'
+          bgClass='bg-dark-pink-gradient'
+          textColorClass='text-white'
+          buttonClass='mt-4 p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
+          initialImagePosition='right'
+          initialTextPosition='justify-start'
+          idName='second-desktop-card'
+          previewLines={3}
+          isExpanded={isExpanded2}
+          setIsExpanded={setIsExpanded2}
+          maxExpandedHeight='200px' //
+        />
 
-      {/* MARK: Desktop Box 1 */}
-      <div id='take-a-look-desktop' className='w-full sm:w-[80%] pt-16 hidden sm:flex sm:flex-col items-center justify-self-center'>
-        {/* Text and Image Container 1*/}
-        <div className='relative flex items-center justify-start'>
-          {/* Text Section */}
-          <div
-            className='relative z-10 w-[60%] bg-zinc-900 text-white rounded-lg shadow-lg p-2 sm:p-6 welcome-card-scroll'
-            style={{
-              minHeight: '250px',
-            }}
-          >
-            <h2 className='mb-4 text-xl font-semibold sm:2xl lg:text-3xl'>
-              Плитката като универсален стил
-            </h2>
-            <ExpandableText
-              className='block mb-4 text-lg text-gray-300'
-              previewLines={4}
-              buttonClass='mt-4 p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
-              expandedText='Виж по-малко'
-              collapsedText='Виж повече'
-              onToggle={(state) => setIsExpanded(state)}
-            >
-              Плитките не са просто практично решение за премахване на косата от
-              лицето ви – те са начин да изразите стил и увереност. С тях
-              печелите време за важните неща, като едновременно постигате
-              мечтаната визия и дълга коса. Те безпроблемно преминават от
-              ежедневна небрежност към подчертана елегантност, допълвайки и
-              най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в
-              косите и подчертават вашата естествена усмивка.
-              <br />
-              <span className='text-gray-200'>
-                Оставете плитките да говорят за вашия стил!
-              </span>
-            </ExpandableText>
-          </div>
-          {/* Image Section (behind and Right) */}
-          <div
-            className={`absolute top-1/2 transform -translate-y-1/2 rounded-lg shadow-md z-0 transition-all duration-500`}
-            style={{
-              right: isExpanded
-                ? '-4%' // Expanded position
-                : '10%', // Initial position
-              height: isExpanded ? '110%' : '80%',
-              width: '40%', // Static width
-              backgroundImage: "url('images/braids/braidsSwiper4.webp')",
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          ></div>
-        </div>
-      </div>
-      {/* MARK: GRID LAYOUT */}
-      <div className='grid grid-cols-1 lg:grid-cols-2 w-full max-w-[80%] justify-self-center pb-16 pt-8 gap-16'>
-         {/* MARK: Column 1 - Desktop Layout */}
-      <div className='flex-col hidden lg:flex'>
-        {/* Text Container */}
-        <div className='w-full p-4 bg-[#18181b] text-white rounded-lg shadow-md text-center'>
-          <h2 className='mb-4 text-xl font-semibold'>
-            Плитката като универсален стил
-          </h2>
-          <ExpandableText
-            className='block mb-4 text-lg text-gray-300'
-            previewLines={3}
-            buttonClass='mt-4 py-2 px-4 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
-            expandedText='Виж по-малко'
-            collapsedText='Виж повече'
-            onToggle={(state) => setIsSideSmallExpanded(state)}
-          >
-            Плитките не са просто практично решение за премахване на косата от
-            лицето ви – те са начин да изразите стил и увереност. С тях
-            печелите време за важните неща, като едновременно постигате
-            мечтаната визия и дълга коса. Те безпроблемно преминават от
-            ежедневна небрежност към подчертана елегантност, допълвайки и
-            най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в
-            косите и подчертават вашата естествена усмивка.
-            <br />
-            <span className='text-gray-200'>
-              Оставете плитките да говорят за вашия стил!
-            </span>
-          </ExpandableText>
-        </div>
-
-        {/* Image Container */}
-        <div
-          className={`w-full rounded-md shadow-md bg-cover bg-center transition-all duration-500 mt-4 overflow-hidden`}
-          style={{
-            height: isSideSmallExpanded ? '11rem' : '0',
-            backgroundImage: "url('images/braids/braidsSwiper4.webp')",
-          }}
-        ></div>
-      </div>
-
-        {/* MARK: Column 2 */}
-        <div className='relative items-center justify-end hidden sm:flex'>
-          {/* Content Container */}
-          <div className='relative flex justify-end w-full'>
-            {/* Text Section */}
-            <div
-              className='relative z-10 w-1/2 p-6 bg-[#18181b] text-white rounded-lg shadow-lg'
-              style={{ minHeight: '250px' }}
-            >
-              <h2 className='text-xl font-semibold sm:2xl'>
-                Плитката като универсален стил
-              </h2>
-              <ExpandableText
-                className='block my-4 text-lg text-gray-300'
-                previewLines={3}
-                buttonClass='px-4 py-2 mt-4 text-sm sm:text-md bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
-                expandedText='Виж по-малко'
-                collapsedText='Виж повече'
-                onToggle={(state) => setIsLowerExpanded(state)}
-              >
-                Плитките не са просто практично решение за премахване на косата
-                от лицето ви – те са начин да изразите стил и увереност. С тях
-                печелите време за важните неща, като едновременно постигате
-                мечтаната визия и дълга коса. Те безпроблемно преминават от
-                ежедневна небрежност към подчертана елегантност, допълвайки и
-                най-официалния тоалет. Плитките внасят блясък в очите ви, цвят в
-                косите и подчертават вашата естествена усмивка.
-                <br />
-                <span className='text-gray-200'>
-                  Оставете плитките да говорят за вашия стил!
-                </span>
-              </ExpandableText>
-            </div>
-            {/* Image Section */}
-            <div
-              className={`absolute top-1/2 transform -translate-y-1/2 w-1/2 h-4/5 bg-cover bg-center rounded-lg shadow-md z-0 transition-all duration-500`}
-              style={{
-                left: isLowerExpanded ? '0%' : '10%',
-                height: isLowerExpanded ? '90%' : '60%',
-                backgroundImage: "url('images/braids/braidsSwiper4.webp')",
-              }}
-            ></div>
-          </div>
-        </div>
+        {/* First Split Desktop Card */}
+        <DesktopCardSplit
+          leftTitle='Боксьорски плитки'
+          leftContent='Боксьорските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор... орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор..'
+          leftImageUrl='images/braids/braidsSwiper4.webp'
+          rightTitle='Опашка от пълзящи плитки'
+          rightContent='Плитките не са просто практично решение за премахване на косата от лицето ви... ксьорските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор... орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орскит ксьорските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор... орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орските плитки са модерна и функционална прическа, която бързо се превърна в предпочитан избор.. орскит'
+          rightImageUrl='images/braids/braidsSwiper4.webp'
+          leftBgClass='bg-dark-pink-gradient'
+          rightBgClass='bg-dark-pink-gradient'
+          leftTextColorClass='text-white'
+          rightTextColorClass='text-white'
+          previewLines={3}
+          isExpanded={isExpanded2}
+          maxExpandedHeight='300px' // Adjust as needed
+        />
+        {/* 7/7 Elements  */}
+        <DesktopCard
+          title='Kuraqnko'
+          content='Плитките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност... литките не са просто практично решение за премахване на косата от лицето ви – те са начин да изразите стил и увереност...'
+          imageUrl='images/braids/braidsSwiper4.webp'
+          bgClass='bg-pink-gradient'
+          textColorClass='text-zinc-800'
+          buttonClass='mt-4 p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
+          initialImagePosition='right'
+          initialTextPosition='justify-start'
+          idName='second-desktop-card'
+          previewLines={3}
+          isExpanded={isExpanded3}
+          setIsExpanded={setIsExpanded3}
+          maxExpandedHeight='200px' //
+        />
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 export const Services = () => {
   return (
     <>
-      <section className='w-full py-12 my-20 text-white apply-bg'>
+      <section className='w-full py-12 my-20 text-white bg-dark-gradient'>
         <div className='flex flex-col items-center px-6 mx-auto md:flex-row md:items-start max-w-7xl sm:px-20 2xl:px-0 2xl:gap-16'>
           <div className='w-full md:w-1/3'>
             <img
@@ -35,7 +35,7 @@ export const Services = () => {
       </section>
 
       {/* MARK:Temporary Tatoos */}
-      <section className='w-full py-12 my-20 text-white apply-bg'>
+      <section className='w-full py-12 my-20 text-white bg-dark-gradient'>
         <div className='flex flex-col items-center px-6 mx-auto md:flex-row-reverse md:items-start max-w-7xl sm:px-20 2xl:px-0 2xl:gap-16'>
           <div className='w-full md:w-1/3'>
             <img
@@ -69,7 +69,7 @@ export const Services = () => {
         </div>
       </section>
       {/* MARK: Nails */}
-      <section className='w-full py-12 my-20 text-white apply-bg'>
+      <section className='w-full py-12 my-20 text-white bg-dark-gradient'>
         <div className='flex flex-col items-center px-6 mx-auto md:flex-row md:items-start max-w-7xl sm:px-20 2xl:px-0 2xl:gap-16'>
           <div className='w-full md:w-1/3'>
             <img
@@ -100,7 +100,7 @@ export const Services = () => {
         </div>
       </section>
       {/* MARK: Hair Thread */}
-      <section className='w-full py-12 mt-20 text-white apply-bg'>
+      <section className='w-full py-12 mt-20 text-white bg-dark-gradient'>
         <div className='flex flex-col items-center px-6 mx-auto md:flex-row-reverse md:items-start max-w-7xl sm:px-20 2xl:px-0 2xl:gap-16'>
           <div className='w-full md:w-1/3'>
             <img

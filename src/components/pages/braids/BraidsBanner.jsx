@@ -4,11 +4,10 @@ export const BraidsBanner = () => {
   const handleScroll = () => {
     const desktop = document.getElementById('take-a-look-desktop');
     const mobile = document.getElementById('take-look');
-  
+
     if (desktop && desktop.offsetParent !== null) {
       scrollToElement('take-a-look-desktop');
-    }
-    else if (mobile && mobile.offsetParent !== null) {
+    } else if (mobile && mobile.offsetParent !== null) {
       scrollToElement('take-look');
     } else {
       console.error('No visible element to scroll to');
@@ -16,7 +15,7 @@ export const BraidsBanner = () => {
   };
 
   return (
-    <div className='w-full h-[400px] lg:h-[500px] bg-zinc-900 relative overflow-hidden mt-20 cursor-default flex items-center justify-center'>
+    <div className='w-full h-[400px] lg:h-[500px] bg-dark-gradient relative overflow-hidden mt-20 cursor-default flex items-center justify-center'>
       {/* Background Image */}
       <div
         className='absolute top-0 flex w-[30%] h-full mb-10 bg-center'
@@ -26,7 +25,7 @@ export const BraidsBanner = () => {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           opacity: '50%',
-          loading: 'eager'
+          loading: 'eager',
         }}
       >
         <div
@@ -47,7 +46,7 @@ export const BraidsBanner = () => {
           БЪДИ СТИЛНА БЪДИ НЕПОВТОРИМА
         </p>
         <button
-          className='px-6 py-3 my-8 font-medium text-white transition-all bg-[#e95d7a] rounded-md hover:bg-[#e44061]'
+          className='px-6 py-3 my-8 font-medium site-button-alt'
           onClick={handleScroll}
         >
           РАЗГЛЕДАЙ

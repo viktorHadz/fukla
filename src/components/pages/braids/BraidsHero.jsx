@@ -4,7 +4,7 @@ export const BraidsHero = () => {
   return (
     <>
       {/* Card Grid - Medium and Larger Screens */}
-      <div className='justify-around hidden p-4 md:p-6 lg:p-8 sm:flex bg-zinc-900'>
+      <div className='justify-around hidden p-4 md:p-6 lg:p-8 sm:flex bg-dark-gradient'>
         {[1, 2, 3].map((process) => (
           <div
             key={`process-${process}`}
@@ -33,7 +33,7 @@ export const BraidsHero = () => {
       </div>
 
       {/* Slider - Small Screens */}
-      <div className='flex items-center justify-center sm:hidden bg-zinc-900'>
+      <div className='flex items-center justify-center sm:hidden bg-dark-gradient'>
         <SliderStart />
       </div>
     </>

@@ -25,21 +25,24 @@ html {
 .apply-bg {
   background-color: #18181b;
 }
+.apply-gradient {
+  @apply bg-dark-gradient;
+}
 
 .site-button-alt {
-  @apply p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all
+  @apply p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all;
 }
 
 .site-button {
-
   @apply px-4 py-2 font-bold text-white transition-colors duration-100 ease-in-out border border-white rounded-md cursor-pointer;
   @apply hover:bg-[#e95d7a] hover:border-[#e95d7a];
 }
 
 /* MARK: Hover Cards */
 /* Handles hover jiggle for cards */
-.card-left::before {
-  content: "";
+/* .card-left::before {
+  content: '';
+  overflow: hidden;
   position: absolute;
   top: -20px;
   right: -120px;
@@ -48,14 +51,15 @@ html {
   z-index: -10;
 }
 .card-right::before {
-  content: "";
+  content: '';
+  overflow: hidden;
   position: absolute;
   top: -20px;
   right: -20px;
   bottom: -35px;
   left: -120px;
   z-index: -10;
-}
+} */
 /* Hide default scrollbar */
 /* Default scrollbar hidden (set opacity to 0) */
 .card-center div.overflow-y-scroll::-webkit-scrollbar,
@@ -228,7 +232,6 @@ html {
 }
 /* Footer */
 .footer {
-  background: var(--color-black);
   padding: 0 0 30px 0;
   font-size: 14px;
 }

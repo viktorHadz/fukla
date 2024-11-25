@@ -8,9 +8,12 @@ import { AllRoutes } from './components/routes/AllRoutes';
 import { BrowserRouter as Router } from 'react-router-dom';
 // Analytics
 import { analytics, logEvent } from './firebase';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
+  // Controls header visibility - exposed globally bellow
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+
   useEffect(() => {
     // SEO Instructions: Example analytics events for all pages
     logEvent(analytics, 'Home page accessed: ', { page: 'home' });
@@ -18,11 +21,14 @@ function App() {
     logEvent(analytics, 'Nails page accessed: ', { page: 'nails' });
     logEvent(analytics, 'Tattoo page accessed: ', { page: 'tattoo' });
     logEvent(analytics, 'Extensions page accessed: ', { page: 'extensions' });
+
+    window.hideHeader = () => setIsHeaderVisible(false);
+    window.showHeader = () => setIsHeaderVisible(true);
   }, []);
   return (
     <div className='App'>
       <Router>
-        <Header />
+        {isHeaderVisible && <Header />}
         <div className='content'>
           <AllRoutes />
         </div>

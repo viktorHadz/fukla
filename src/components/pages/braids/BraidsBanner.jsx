@@ -46,7 +46,7 @@ export const BraidsBanner = () => {
           БЪДИ СТИЛНА БЪДИ НЕПОВТОРИМА
         </p>
         <button
-          className='px-6 py-3 my-8 font-medium site-button-alt'
+          className='my-8 text-xs site-button-alt xs:text-sm md:text-base lg:text-lg'
           onClick={handleScroll}
         >
           РАЗГЛЕДАЙ

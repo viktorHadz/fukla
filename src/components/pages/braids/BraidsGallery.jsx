@@ -1,19 +1,12 @@
-import { useState, useEffect, useRef, useLayoutEffect, Fragment } from 'react';
+// BraidsGallery.jsx
+import { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import { storage, ref, list, getDownloadURL } from '../../../firebase';
-import {
-  Dialog,
-  DialogPanel,
-  DialogTitle,
-  Transition,
-} from '@headlessui/react';
-import { XMarkIcon } from '@heroicons/react/24/outline';
 import ImageWithPlaceholder from '../../common/ImageWithPlaceHolder';
 
-const BraidsGallery = () => {
+const BraidsGallery = ({ isGalleryOpen }) => {
   const [visibleImages, setVisibleImages] = useState([]); // Images currently displayed
   const [preloadedImages, setPreloadedImages] = useState([]); // Images preloaded but not yet displayed
   const nextPageTokenRef = useRef(null); // Pagination token
-  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const scrollContainerRef = useRef(null); // For scrolling to the bottom on image load
 
   // Fetch initial images when the Braids page loads
@@ -102,7 +95,8 @@ const BraidsGallery = () => {
       nextPageTokenRef.current = result.nextPageToken || null;
     }
   };
-  // Scrolls to bottom when visibleImages updates
+
+  // Scroll to bottom when visibleImages updates
   useLayoutEffect(() => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollTo({
@@ -111,67 +105,30 @@ const BraidsGallery = () => {
       });
     }
   }, [visibleImages]);
-  // Open and close gallery
-  const handleOpenGallery = () => setIsGalleryOpen(true);
-  const handleCloseGallery = () => setIsGalleryOpen(false);
 
   return (
-    <>
-      <button onClick={handleOpenGallery}>Open Gallery</button>
-      {isGalleryOpen && (
-        <Dialog
-          open={isGalleryOpen}
-          onClose={handleCloseGallery}
-          className='relative z-50'
-        >
-          {/* Dialog Overlay*/}
-          <div className='fixed inset-0 flex items-center justify-center w-screen bg-zinc-950 bg-opacity-85'>
-            {/* Dialog Panel */}
-            <DialogPanel className='relative w-[95%] h-[90%] mt-24 border border-transparent rounded-md bg-zinc-50 overflow-hidden'>
-              {/* Dialog Title */}
-              <DialogTitle className='relative flex flex-col items-center w-full p-8 mb-8 text-xl font-bold text-center sm:p-4 bg-zinc-900 sm:text-2xl md:text-4xl underline-txt'>
-                {/* Close Button */}
-                <button
-                  className='absolute sm:top-4 sm:right-4 top-2 right-2 rounded-full text-white hover:bg-[#e95d7a] transition duration-200'
-                  onClick={handleCloseGallery}
-                >
-                  <XMarkIcon className='w-8 h-auto p-1' />
-                </button>
-                {/* Load More Button */}
-                {nextPageTokenRef.current && (
-                  <button
-                    onClick={loadMoreImages}
-                    className='site-button absolute left-2 bottom-4 sm:left-4 !text-base !font-normal !p-2'
-                  >
-                    Зареди още
-                  </button>
-                )}
-                {/* Centered Text */}
-                <div className='items-center justify-center hidden w-full text-white sm:flex'>
-                  <p>Галерия - Плитки</p>
-                </div>
-              </DialogTitle>
-
-              <div
-                ref={scrollContainerRef}
-                className='grid w-full h-full grid-flow-row grid-cols-1 gap-8 p-4 overflow-y-auto sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 4xl:grid-cols-5 justify-items-center'
-                style={{ maxHeight: '100%' }}
-              >
-                {visibleImages.map((image, index) => (
-                  <ImageWithPlaceholder
-                    key={index}
-                    src={image.url}
-                    alt={`Braids-${index}`}
-                    loading='lazy'
-                    className='w-auto max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] 2xl:max-h-[800px] shadow-lg rounded-md shadow-gray-300 cursor-pointer'
-                  />
-                ))}
-              </div>
-            </DialogPanel>
-          </div>
-        </Dialog>
+    <div>
+      <div
+        ref={scrollContainerRef}
+        className='grid grid-flow-row grid-cols-1 gap-8 p-4 overflow-y-auto sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 4xl:grid-cols-5 justify-items-center'
+        style={{ maxHeight: '100%' }}
+      >
+        {visibleImages.map((image, index) => (
+          <ImageWithPlaceholder
+            key={index}
+            src={image.url}
+            alt={`Braids-${index}`}
+            loading='lazy'
+            className='w-auto max-h-[400px] lg:max-h-[500px] xl:max-h-[600px] 2xl:max-h-[800px] shadow-lg rounded-md shadow-gray-300 cursor-pointer'
+          />
+        ))}
+      </div>
+      {nextPageTokenRef.current && (
+        <button onClick={loadMoreImages} className='mt-4 site-button'>
+          Зареди още
+        </button>
       )}
-    </>
+    </div>
   );
 };
 

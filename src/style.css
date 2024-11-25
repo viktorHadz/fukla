@@ -29,15 +29,32 @@ html {
   @apply bg-dark-gradient;
 }
 
-.site-button-alt {
-  @apply p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all;
-}
-
 .site-button {
-  @apply px-4 py-2 font-bold text-white transition-colors duration-100 ease-in-out border border-white rounded-md cursor-pointer;
-  @apply hover:bg-[#e95d7a] hover:border-[#e95d7a];
+  @apply relative rounded-md py-2 px-6 text-sm font-medium text-white border border-white hover:border-[#fda7bf] bg-transparent transition-all duration-300 hover:animate-glow hover:bg-gradient-to-r hover:from-[#fda7bf] hover:to-[#e95d7a] focus:outline-none focus:ring-2 focus:ring-[#fda7bf] active:scale-95;
 }
+.site-button-alt {
+  @apply relative rounded-md py-2 px-6 text-sm font-medium text-white 
+    bg-gradient-to-r from-[#fda7bf] via-[#df5179] to-[#e95d7a] 
+    bg-[length:200%_200%] hover:animate-shimmer
+    animate-glow transition-transform duration-300 ease-in-out 
+    hover:scale-105 active:scale-95 focus:outline-none 
+    focus:ring-2 focus:ring-[#fda7bf];
+}
+.site-button-3 {
+  @apply relative rounded-md py-2 px-4 text-sm font-medium text-white 
+    bg-black/30 hover:bg-black/45 transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#fda7bf];
 
+  /* Add pseudo-element for gradient border */
+}
+.site-button-3::before {
+  @apply absolute inset-0 rounded-md active:bg-black/45
+    opacity-0 transition-opacity duration-200;
+  content: '';
+  z-index: -1;
+}
+.site-button-3:hover::before {
+  @apply opacity-100;
+}
 /* MARK: Hover Cards */
 /* Handles hover jiggle for cards */
 /* .card-left::before {

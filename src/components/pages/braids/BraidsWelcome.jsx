@@ -8,7 +8,7 @@ export const BraidsWelcome = () => {
   const [isExpanded3, setIsExpanded3] = useState(false);
   return (
     <>
-      <div className='bg-white-gradient'>
+      <div className=''>
         {/* MARK: Mobile LAYOUT */}
         <div className='flex flex-col w-full gap-4 p-12 sm:hidden'>
           {/* Mobile Card 1 */}
@@ -86,7 +86,7 @@ export const BraidsWelcome = () => {
           imageUrl='images/braids/braidsSwiper4.webp'
           bgClass='bg-dark-gradient'
           textColorClass='text-white'
-          buttonClass='mt-4 p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
+          buttonClass='mt-4 p-2 text-sm sm:text-lg site-button'
           initialImagePosition='right'
           idName='take-a-look-desktop'
           previewLines={3}
@@ -118,7 +118,7 @@ export const BraidsWelcome = () => {
           imageUrl='images/braids/braidsSwiper4.webp'
           bgClass='bg-dark-pink-gradient'
           textColorClass='text-white'
-          buttonClass='mt-4 p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
+          buttonClass='mt-4 p-2 text-sm sm:text-lg site-button'
           initialImagePosition='right'
           initialTextPosition='justify-start'
           idName='second-desktop-card'
@@ -151,7 +151,7 @@ export const BraidsWelcome = () => {
           imageUrl='images/braids/braidsSwiper4.webp'
           bgClass='bg-pink-gradient'
           textColorClass='text-zinc-800'
-          buttonClass='mt-4 p-2 text-sm sm:text-lg bg-gradient-to-r from-white to-pink-500 text-[#18181b] rounded-lg hover:from-[#e95d7a] hover:to-purple-600 hover:text-white transition-all'
+          buttonClass='mt-4 p-2 text-sm sm:text-lg site-button !text-zinc-800 hover:!text-white !border-zinc-800 hover:!border-white'
           initialImagePosition='right'
           initialTextPosition='justify-start'
           idName='second-desktop-card'

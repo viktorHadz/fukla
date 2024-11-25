@@ -5,6 +5,7 @@
   --color-blue: #87e6de;
 
   --font-primary: 'Roboto Mono', monospace;
+  @apply bg-very-white-gradient;
 }
 /* GLOBAL */
 * {

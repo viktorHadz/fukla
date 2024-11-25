@@ -1,7 +1,7 @@
 import { NailsBanner } from './nails/NailsBanner';
 import { NailsHero } from './nails/NailsHero';
 import { NailsWelcome } from './nails/NailsWelcome';
-import { BraidsDivider } from './braids/BraidsDivider';
+import { BraidsCards } from './braids/BraidsCards';
 import { NailsPortfolio } from './nails/NailsPortfolio';
 import { NailsPricing } from './nails/NailsPricing';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
@@ -13,7 +13,7 @@ export const Nails = () => {
       <NailsBanner />
       <NailsHero />
       <NailsWelcome />
-      <BraidsDivider />
+      <BraidsCards />
       <NailsPortfolio />
       <NailsPricing />
     </>

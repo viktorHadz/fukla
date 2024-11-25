@@ -8,7 +8,7 @@ export const BraidsWelcome = () => {
   const [isExpanded3, setIsExpanded3] = useState(false);
   return (
     <>
-      <div className=''>
+      <div className='flex flex-col items-center justify-center w-full'>
         {/* MARK: Mobile LAYOUT */}
         <div className='flex flex-col w-full gap-4 p-12 sm:hidden'>
           {/* Mobile Card 1 */}

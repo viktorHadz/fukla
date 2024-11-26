@@ -1,7 +1,7 @@
 export const Instagram = () => {
   return (
     <section className='instagram'>
-      <h2 className='mb-12 text-4xl text-center underline-txt md:text-5xl sm:mb-10'>
+      <h2 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
         Instagram
       </h2>
       <a

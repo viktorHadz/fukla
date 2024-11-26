@@ -15,10 +15,10 @@ export const BraidsBanner = () => {
   };
 
   return (
-    <div className='w-full h-[400px] lg:h-[500px] bg-dark-gradient relative overflow-hidden mt-20 cursor-default flex items-center justify-center'>
+    <div className='w-full h-[500px] lg:h-[700px] bg-dark-gradient relative overflow-hidden mt-20 cursor-default flex items-center justify-center'>
       {/* Background Image */}
       <div
-        className='absolute top-0 flex w-[30%] h-full mb-10 bg-center'
+        className='absolute top-0 flex w-[50%] md:w-[30%] h-full mb-10 bg-center'
         style={{
           backgroundImage: `url('images/home/braid-thread.webp')`,
           backgroundRepeat: 'no-repeat',
@@ -39,10 +39,10 @@ export const BraidsBanner = () => {
 
       {/* Content */}
       <div className='relative z-10 flex flex-col items-center px-4 text-center'>
-        <h1 className='text-3xl font-medium tracking-widest text-white uppercase md:text-4xl lg:text-5xl'>
+        <h1 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
           ПЛИТКИ
         </h1>
-        <p className='mt-4 text-lg tracking-widest text-white md:text-xl lg:text-2xl'>
+        <p className='mt-6 text-lg leading-8 text-white'>
           БЪДИ СТИЛНА БЪДИ НЕПОВТОРИМА
         </p>
         <button

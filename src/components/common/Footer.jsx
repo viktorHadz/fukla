@@ -3,7 +3,12 @@ export const Footer = () => {
   const footerNavigation = {
     main: [
       { name: 'Телефон', href: 'tel:+359884218445' },
-      { name: 'Адрес', href: 'https://goo.gl/maps/JyPuf91ztik3HE1r8', target: "_blank", rel: "noopener noreferrer" },
+      {
+        name: 'Адрес',
+        href: 'https://goo.gl/maps/JyPuf91ztik3HE1r8',
+        target: '_blank',
+        rel: 'noopener noreferrer',
+      },
       { name: 'Начало', href: '/' },
       { name: 'Плитки', href: '/braids' },
       { name: 'Нокти', href: '/nails' },
@@ -12,7 +17,9 @@ export const Footer = () => {
     social: [
       {
         name: 'Facebook',
-        href: '#',
+        href: 'https://www.facebook.com/profile.php?id=100088083380505',
+        target: '_blank',
+        rel: 'noopener noreferrer',
         icon: (props) => (
           <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
             <path
@@ -25,7 +32,9 @@ export const Footer = () => {
       },
       {
         name: 'Instagram',
-        href: '#',
+        target: '_blank',
+        rel: 'noreferrer',
+        href: 'https://www.instagram.com/artstudio.fukla/',
         icon: (props) => (
           <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
             <path
@@ -37,8 +46,9 @@ export const Footer = () => {
         ),
       },
       {
-        name: 'Email',
+        name: '',
         href: 'mailto:slavinka.rad@gmail.com',
+        component: true,
         icon: (props) => (
           <svg
             fill='none'
@@ -57,86 +67,22 @@ export const Footer = () => {
         ),
       },
 
-      {
-        name: 'YouTube',
-        href: '#',
-        icon: (props) => (
-          <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
-            <path
-              fillRule='evenodd'
-              d='M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z'
-              clipRule='evenodd'
-            />
-          </svg>
-        ),
-      },
+      // {
+      //   name: 'YouTube',
+      //   href: '#',
+      //   icon: (props) => (
+      //     <svg fill='currentColor' viewBox='0 0 24 24' {...props}>
+      //       <path
+      //         fillRule='evenodd'
+      //         d='M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z'
+      //         clipRule='evenodd'
+      //       />
+      //     </svg>
+      //   ),
+      // },
     ],
   };
   return (
-    // <footer className='footer bg-dark-gradient'>
-    //   <div className='w-full px-4 py-8 text-white md:px-6'>
-    //     <div className='grid grid-cols-1 gap-8 text-center sm:grid-cols-2 md:grid-cols-3'>
-    //       {/* Contact Section */}
-    //       <div className='flex flex-col items-center'>
-    //         <h2 className='mb-4 text-2xl font-semibold underline-txt'>
-    //           Контакти
-    //         </h2>
-    //         <div className='space-y-2'>
-    //           <a
-    //             className='block cursor-pointer hover:underline'
-    //             href='tel:+359884218445'
-    //           >
-    //             T:+359 884 218 445
-    //           </a>
-    //           <a
-    //             className='block cursor-pointer hover:underline'
-    //             href='mailto:contact@slavinaradanova.com'
-    //           >
-    //             contact@slavinaradanova.com
-    //           </a>
-    //         </div>
-    //       </div>
-
-    //       {/* Working Hours Section - Hidden below `sm` breakpoint */}
-    //       <div className='flex flex-col items-center'>
-    //         <h2 className='mb-4 text-2xl font-semibold underline-txt'>
-    //           Работно време
-    //         </h2>
-    //         <div className='space-y-2'>
-    //           <p>Пон до Пет: 09:00ч. - 18:00ч.</p>
-    //           <p>Събота: 10:00ч. - 15:00ч.</p>
-    //           <p>Неделя: почивен</p>
-    //         </div>
-    //       </div>
-
-    //       {/* Location Section */}
-    //       <div className='flex-col items-center hidden sm:flex'>
-    //         <h2 className='mb-4 text-2xl font-semibold underline-txt'>
-    //           Локация
-    //         </h2>
-    //         <div className='space-y-2'>
-    //           <a
-    //             className='block cursor-pointer hover:underline'
-    //             href='https://goo.gl/maps/JyPuf91ztik3HE1r8'
-    //           >
-    //             Велико Търново
-    //           </a>
-    //           <a
-    //             className='block cursor-pointer hover:underline'
-    //             href='https://goo.gl/maps/JyPuf91ztik3HE1r8'
-    //           >
-    //             Пл. Пенчо Славейков 4
-    //           </a>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <div className='w-full'>
-    //     <div className='copyright'>
-    //       &copy; Copyright <strong>Fukla</strong>. All Rights Reserved
-    //     </div>
-    //   </div>
-    // </footer>
     <footer className='px-6 pb-20 mx-auto mt-32 overflow-hidden max-w-7xl sm:mt-32 sm:pb-24 lg:px-8'>
       <nav
         className='-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12'
@@ -162,8 +108,9 @@ export const Footer = () => {
             <div key={item.name} className='pb-6'>
               <a
                 href={item.href}
-                target={item.target} 
-                rel="noopener noreferrer"
+                target={item.target}
+                rel={item.rel}
+                // rel='noopener noreferrer'
                 className='text-sm leading-6 text-gray-600 hover:text-zinc-800'
               >
                 {item.name}
@@ -173,16 +120,37 @@ export const Footer = () => {
         )}
       </nav>
       <div className='flex justify-center mt-10 space-x-10'>
-        {footerNavigation.social.map((item) => (
-          <a
-            key={item.name}
-            href={item.href}
-            className='text-gray-400 hover:text-gray-500'
-          >
-            <span className='sr-only'>{item.name}</span>
-            <item.icon className='w-6 h-6' aria-hidden='true' />
-          </a>
-        ))}
+        {footerNavigation.social.map((item) =>
+          item.component ? (
+            <div key={item.name}>
+              <DialogPopUp
+                buttonText={item.name}
+                diaTitle=''
+                closeButton='Затвори'
+                closeClass='!p-2 !text-xs inline-flex items-center site-button-3'
+                customText={
+                  <p>
+                    <span className='font-bold'>Електронна поща:</span>{' '}
+                    slavinka.rad@gmail.com
+                  </p>
+                }
+                buttonClass='text-gray-400 hover:text-gray-500'
+                icon={<item.icon className='w-6 h-6' aria-hidden='true' />}
+              />
+            </div>
+          ) : (
+            <a
+              key={item.name}
+              href={item.href}
+              target={item.target}
+              rel={item.rel}
+              className='text-gray-400 hover:text-gray-500'
+            >
+              <span className='sr-only'>{item.name}</span>
+              <item.icon className='w-6 h-6' aria-hidden='true' />
+            </a>
+          )
+        )}
       </div>
       <p className='mt-10 text-xs leading-5 text-center text-gray-500'>
         &copy; Copyright Fukla. All Rights Reserved
@@ -190,4 +158,3 @@ export const Footer = () => {
     </footer>
   );
 };
-

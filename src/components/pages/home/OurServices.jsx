@@ -25,13 +25,16 @@ const features = [
 
 export const OurServices = () => {
   return (
-    <div className='px-6 mx-auto my-28 max-w-7xl sm:my-40 lg:px-8'>
+    <div
+      className='px-6 mx-auto my-28 max-w-7xl sm:my-40 lg:px-8'
+      id='what-we-offer'
+    >
       <div className='max-w-2xl mx-auto lg:text-center'>
         <h2 className='text-base font-semibold leading-7 text-[#e95d7a]'>
-          Перфектният избор за всеки стил.
+          Перфектният избор за всеки стил
         </h2>
         <p className='mt-2 text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl'>
-          Създаваме визии, които говорят вместо вас.
+          Създаваме визии, които говорят вместо вас
         </p>
         <p className='mt-6 text-lg leading-8 text-gray-600'>
           Всяка плитка и маникюр са израз на вашата индивидуалност и стил. Ние

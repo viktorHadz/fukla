@@ -2,25 +2,32 @@ import { Button, Dialog, DialogPanel, DialogTitle } from '@headlessui/react';
 import { useState, useEffect } from 'react';
 
 export const DialogPopUp = ({
-  buttonText = '' || 'Виж още',
+  buttonText = 'Виж още',
   diaTitle,
   closeButton = '' || 'Затвори',
+  closeClass = '' || 'inline-flex items-center site-button-3',
   children,
   customText,
   textClass = '',
-  buttonClass = '' || 'site-button-3',
+  buttonClass = 'site-button-3',
+  icon, // New prop for custom icon
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   function open() {
     setIsOpen(true);
-    window.hideHeader();
+    if (window.hideHeader) {
+      window.hideHeader();
+    }
   }
 
   function close() {
     setIsOpen(false);
-    window.showHeader();
+    if (window.showHeader) {
+      window.showHeader();
+    }
   }
+
   useEffect(() => {
     return () => {
       if (window.showHeader) {
@@ -28,9 +35,11 @@ export const DialogPopUp = ({
       }
     };
   }, []);
+
   return (
     <>
       <Button onClick={open} className={`${buttonClass}`}>
+        {icon && <span className='inline-block mr-2'>{icon}</span>}
         {buttonText}
       </Button>
 
@@ -56,10 +65,7 @@ export const DialogPopUp = ({
                 <div className='mt-2'>{children || customText}</div>
               </div>
               <div className='mt-4'>
-                <Button
-                  className='inline-flex items-center site-button-3'
-                  onClick={close}
-                >
+                <Button className={closeClass} onClick={close}>
                   {closeButton}
                 </Button>
               </div>

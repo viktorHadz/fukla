@@ -1,7 +1,6 @@
 import { TattooBanner } from './tattoo/TattooBanner';
 import { TattooHero } from './tattoo/TattooHero';
 import { TattooWelcome } from './tattoo/TattooWelcome';
-import { BraidsCards } from './braids/BraidsCards';
 import { TattooPortfolio } from './tattoo/TattooPortfolio';
 import { TattooPricing } from './tattoo/TattooPricing';
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
@@ -13,7 +12,6 @@ export const Tattoo = () => {
       <TattooBanner />
       <TattooHero />
       <TattooWelcome />
-      <BraidsCards />
       <TattooPortfolio />
       <TattooPricing />
     </>

@@ -53,12 +53,12 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export const BraidsTypes = () => {
+export const BraidsHero2 = () => {
   return (
     <div className='bg-white'>
       <main className='isolate'>
         {/* Hero section */}
-        <div className='relative pt-14'>
+        <div className='relative'>
           <div
             className='absolute inset-x-0 overflow-hidden -top-40 -z-10 transform-gpu blur-3xl sm:-top-80 lg:motion-safe:animate-pulse'
             aria-hidden='true'
@@ -88,7 +88,7 @@ export const BraidsTypes = () => {
                 </p>
               </div>
               <div className='flow-root mt-16 sm:mt-24'>
-                <div className='inline-block w-full p-2 -m-2 rounded-xl bg-gray-900/5 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4'>
+                <div className='inline-block w-full'>
                   <ImageLayout />
                 </div>
               </div>
@@ -109,7 +109,7 @@ export const BraidsTypes = () => {
         </div>
 
         {/* Testimonial section */}
-        <div className='mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8'>
+        {/* <div className='mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8'>
           <div className='relative px-6 py-20 overflow-hidden bg-gray-900 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20'>
             <img
               className='absolute inset-0 object-cover w-full h-full brightness-150 saturate-0'
@@ -164,10 +164,10 @@ export const BraidsTypes = () => {
               </figure>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Pricing section */}
-        <div className='py-24 sm:pt-48'>
+        {/* <div className='py-24 sm:pt-48'>
           <div className='px-6 mx-auto max-w-7xl lg:px-8'>
             <div className='max-w-4xl mx-auto text-center'>
               <h2 className='text-base font-semibold leading-7 text-indigo-600'>
@@ -254,7 +254,7 @@ export const BraidsTypes = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </main>
     </div>
   );

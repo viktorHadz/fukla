@@ -26,7 +26,7 @@ const features = [
 export const OurServices = () => {
   return (
     <div
-      className='px-6 mx-auto my-28 max-w-7xl sm:my-40 lg:px-8'
+      className='px-6 py-24 mx-auto max-w-7xl sm:py-32 lg:px-8'
       id='what-we-offer'
     >
       <div className='max-w-2xl mx-auto lg:text-center'>

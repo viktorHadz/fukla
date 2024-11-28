@@ -1,20 +1,18 @@
-import { scrollToElement } from "../../common/scrollToElement";
+import { scrollToElement } from '../../common/scrollToElement';
 export const Tails = () => {
   const handleScroll = () => {
     scrollToElement('what-we-offer');
   };
   return (
-    <div className='relative flex justify-around pt-4 pb-0 overflow-hidden h-[400px] lg:h-[500px] xs:pt-12 sm:pt-24 bg-zinc-900 isolate'>
+    <div className='relative flex justify-around pt-4 pb-0 overflow-hidden h-[500px] lg:h-[600px] xs:pt-12 sm:pt-24 bg-zinc-900 isolate'>
       <div className='flex flex-col justify-around w-full sm:flex sm:flex-row'>
         {/*1 - Banner logo */}
         <div className='flex flex-col justify-center text-center text-white sm:text-left'>
           <h1 className='text-[#e95d7a] text-6xl font-extrabold hidden lg:block'>
-            <span className='text-hot-pink'>F</span>ukla
+            Fukla
           </h1>
           <span className='my-4'>
-            <p className='text-4xl font-semibold '>
-              Красота с характер
-            </p>
+            <p className='text-4xl font-semibold '>Красота с характер</p>
             <p className='text-sm italic quote-text xs:text-base sm:text-lg md:text-xl lg:text-2xl'>
               - "Бъди <span className='text-[#e95d7a]'>дръзка</span>, бъди{' '}
               <span className='text-[#e95d7a]'>уникална</span>, бъди
@@ -23,20 +21,23 @@ export const Tails = () => {
             </p>
           </span>
           <div>
-          <button onClick={handleScroll} className='text-xs site-button-alt xs:text-sm md:text-base lg:text-lg'>
-            РАЗГЛЕДАЙ
-          </button>
+            <button
+              onClick={handleScroll}
+              className='text-xs site-button-alt xs:text-sm md:text-base lg:text-lg'
+            >
+              РАЗГЛЕДАЙ
+            </button>
           </div>
         </div>
 
         {/*2 - Banner Image */}
         <div className='flex justify-end'>
-            <img
-              src='images/home/small-banner-image.webp'
-              className='absolute object-contain -bottom-10 xs:w-40 sm:w-48 lg:w-64 2xl:w-72'
-              alt='Right-side banner'
-              loading="eager"
-            />
+          <img
+            src='images/home/small-banner-image.webp'
+            className='absolute object-contain -bottom-10 xs:w-40 sm:w-48 lg:w-64 2xl:w-72'
+            alt='Right-side banner'
+            loading='eager'
+          />
         </div>
 
         {/* Gradients */}

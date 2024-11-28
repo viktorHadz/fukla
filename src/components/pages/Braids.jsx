@@ -1,22 +1,23 @@
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 import { BraidsBanner } from './braids/BraidsBanner';
-import { BraidsWelcome } from './braids/BraidsWelcome';
-import { BraidsHero } from './braids/BraidsHero';
-import { BraidsCards } from './braids/BraidsCards';
-import Newone from './braids/braidsWithBanImage';
-import Test from './braids/Test';
-import { BraidsTypes } from './braids/BraidsTypes';
+import { BraidsHero1 } from './braids/BraidsHero1.jsx';
+import { BraidsHero2 } from './braids/BraidsHero2.jsx';
+import { BraidStyles } from './braids/BraidsStyles.jsx';
+import { PricingAndGallery } from './braids/PricingAndGallery.jsx';
+import { AboutBoryana } from './braids/aboutBoryana.jsx';
+import { AboutSlavina } from './braids/aboutSlavina.jsx';
+import { FAQ } from './braids/FAQ.jsx';
 export const Braids = () => {
   return (
     <>
       <ScrollToTopOnMount />
       <BraidsBanner />
-      <BraidsTypes />
-      <BraidsCards />
-      <Newone />
-      <BraidsWelcome />
-      <Test />
-      <BraidsHero />
+      <BraidsHero1 />
+      <BraidsHero2 />
+      <BraidStyles />
+      <PricingAndGallery />
+      <AboutBoryana />
+      <AboutSlavina />
     </>
   );
 };

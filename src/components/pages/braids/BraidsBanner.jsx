@@ -15,7 +15,7 @@ export const BraidsBanner = () => {
   };
 
   return (
-    <div className='w-full h-[500px] lg:h-[700px] bg-dark-gradient relative overflow-hidden mt-20 cursor-default flex items-center justify-center'>
+    <div className='w-full h-[500px] lg:h-[600px] bg-dark-gradient relative overflow-hidden mt-20 cursor-default flex items-center justify-center'>
       {/* Background Image */}
       <div
         className='absolute top-0 flex w-[50%] md:w-[30%] h-full mb-10 bg-center'

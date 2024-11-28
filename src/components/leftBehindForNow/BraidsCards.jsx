@@ -1,6 +1,6 @@
-import BraidsGallery from './BraidsGallery';
-import { DividerDialog } from './DividerDialog';
-import { BraidsPricing } from './BraidsPricing';
+import BraidsGallery from '../pages/braids/BraidsGallery';
+import { DividerDialog } from '../pages/braids/DividerDialog';
+import { BraidsPricing } from '../pages/braids/BraidsPricing';
 import { useState } from 'react';
 
 export const BraidsCards = () => {

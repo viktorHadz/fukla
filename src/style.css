@@ -47,8 +47,7 @@ html {
   /* Add pseudo-element for gradient border */
 }
 .site-button-3::before {
-  @apply absolute inset-0 rounded-md active:bg-black/45
-    opacity-0 transition-opacity duration-200;
+  @apply absolute inset-0 transition-opacity duration-200 rounded-md opacity-0 active:bg-black/45;
   content: '';
   z-index: -1;
 }

@@ -1,4 +1,4 @@
-export const Hero = () => {
+export const ContactUsInner = () => {
   return (
     <>
       <div className='flex flex-col mb-6'>
@@ -12,9 +12,9 @@ export const Hero = () => {
           </a>
           <a
             className='block cursor-pointer hover:underline'
-            href='mailto:contact@slavinaradanova.com'
+            href='mailto:slavinka.rad@gmail.com'
           >
-            contact@slavinaradanova.com
+            slavinka.rad@gmail.com
           </a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { DialogPopUp } from '../../common/DialogPopUp';
-import { Hero } from './Hero';
+import { ContactUsInner } from './ContactUsInner';
 export const ContactUs = () => {
   return (
     <section aria-labelledby='home-contact py-48'>
@@ -18,7 +18,7 @@ export const ContactUs = () => {
                 </h2>
                 <div className='mt-6 text-base'>
                   <DialogPopUp buttonText='Свържи се'>
-                    <Hero />
+                    <ContactUsInner />
                   </DialogPopUp>
                 </div>
               </div>

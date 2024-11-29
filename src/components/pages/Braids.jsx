@@ -18,6 +18,7 @@ export const Braids = () => {
       <PricingAndGallery />
       <AboutBoryana />
       <AboutSlavina />
+      <FAQ />
     </>
   );
 };

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const services = [
@@ -64,7 +63,7 @@ export const ServiceSection = () => {
             {services.map((service) => (
               <div
                 key={service.id}
-                className='relative p-6 transition-all duration-300 ease-in-out bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105'
+                className='relative p-6 transition-all duration-300 ease-in-out bg-white border border-transparent rounded-lg shadow-lg hover:border-[#e95d7a] hover:shadow-xl hover:scale-105'
               >
                 <h3 className='mt-4 text-lg font-semibold text-gray-900'>
                   {service.name}

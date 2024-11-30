@@ -60,7 +60,7 @@ export const ServiceHero = () => {
               <div className='flex-none pt-32 ml-auto space-y-8 w-44 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80'>
                 <div className='relative'>
                   <img
-                    src='/images/home/pedicureTattoo.webp'
+                    src='/images/home/girlTattoooHome.webp'
                     alt=''
                     className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                   />
@@ -70,7 +70,7 @@ export const ServiceHero = () => {
               <div className='flex-none mr-auto space-y-8 w-44 sm:mr-0 sm:pt-52 lg:pt-36'>
                 <div className='relative'>
                   <img
-                    src='/images/home/nails.webp'
+                    src='/images/home/nailsPurpleHome.webp'
                     alt=''
                     className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                   />
@@ -78,9 +78,9 @@ export const ServiceHero = () => {
                 </div>
                 <div className='relative'>
                   <img
-                    src='/images/home/temp-tattoos.webp'
+                    src='/images/home/pinkJarHome.webp'
                     alt=''
-                    className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
+                    className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover  shadow-lg'
                   />
                   <div className='absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10' />
                 </div>

@@ -5,7 +5,7 @@ const images = [
     span: 'col-span-6 row-span-3', // Horizontal image spans all columns
   },
   {
-    src: '/images/braids/girlOrangeTop.webp',
+    src: '/images/braids/girlPinkBraid.webp',
     alt: 'Vertical Image 1',
     span: 'col-span-3 row-span-3', // First vertical image
   },

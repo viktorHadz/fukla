@@ -39,8 +39,8 @@ export const BraidsBanner = () => {
 
       {/* Content */}
       <div className='relative z-10 flex flex-col items-center px-4 text-center'>
-        <h1 className='text-4xl font-bold tracking-tight text-white sm:text-6xl'>
-          ПЛИТКИ
+        <h1 className='text-4xl font-bold tracking-tight text-white uppercase sm:text-6xl'>
+          сплитане на коса
         </h1>
         <p className='mt-6 text-lg leading-8 text-white'>
           БЪДИ СТИЛНА БЪДИ НЕПОВТОРИМА

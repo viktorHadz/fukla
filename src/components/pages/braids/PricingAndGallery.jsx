@@ -32,11 +32,12 @@ const tiers = [
     featured: true,
   },
 ];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export const PricingAndGallery = () => {
+export const PricingAndGallery = ({ initialImages, nextPageTokenRef }) => {
   return (
     <div className='relative px-6 mt-32 bg-white isolate sm:mt-56 lg:px-8'>
       <div
@@ -138,7 +139,10 @@ export const PricingAndGallery = () => {
                 buttonText='Разгледайте Галерията'
                 buttonClass='site-button-3 w-full mt-4'
               >
-                <BraidsGallery />
+                <BraidsGallery
+                  initialImages={initialImages}
+                  nextPageTokenRef={nextPageTokenRef}
+                />
               </DialogPopUp>
             ) : (
               <DialogPopUp

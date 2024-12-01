@@ -1,19 +1,15 @@
 import { TattooBanner } from './tattoo/TattooBanner';
-import { TattooHero } from './tattoo/TattooHero';
-import { TattooWelcome } from './tattoo/TattooWelcome';
-import { TattooPortfolio } from './tattoo/TattooPortfolio';
-import { TattooPricing } from './tattoo/TattooPricing';
-import ScrollToTopOnMount from '../ScrollToTopOnMount';
+import { TattooHero1 } from './tattoo/TattooHero1';
+import { TattooStyles } from './tattoo/TattooStyles';
+import { TattooFAQ } from './tattoo/TattooFAQ';
 
 export const Tattoo = () => {
   return (
     <>
-      <ScrollToTopOnMount />
       <TattooBanner />
-      <TattooHero />
-      <TattooWelcome />
-      <TattooPortfolio />
-      <TattooPricing />
+      <TattooHero1 />
+      <TattooStyles />
+      <TattooFAQ />
     </>
   );
 };

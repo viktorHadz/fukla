@@ -1,74 +1,6 @@
-const featuredTestimonial = {
-  body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
-  author: {
-    name: 'Brenna Goyette',
-    handle: 'brennagoyette',
-    imageUrl:
-      'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
-    logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
-  },
-};
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
-const testimonials = [
-  [
-    [
-      {
-        body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-        author: {
-          name: 'Leslie Alexander',
-          handle: 'lesliealexander',
-          imageUrl:
-            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
-      // More testimonials...
-    ],
-    [
-      {
-        body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
-        author: {
-          name: 'Lindsay Walton',
-          handle: 'lindsaywalton',
-          imageUrl:
-            'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
-      // More testimonials...
-    ],
-  ],
-  [
-    [
-      {
-        body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
-        author: {
-          name: 'Tom Cook',
-          handle: 'tomcook',
-          imageUrl:
-            'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
-      // More testimonials...
-    ],
-    [
-      {
-        body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
-        author: {
-          name: 'Leonard Krasner',
-          handle: 'leonardkrasner',
-          imageUrl:
-            'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-        },
-      },
-      // More testimonials...
-    ],
-  ],
-];
 export const AboutSlavina = () => {
   return (
-    <div className='pt-24 pb-16 bg-dark-gradient sm:pb-24 sm:pt-32 xl:pb-32'>
+    <div className='my-24 xl:my-36 bg-dark-gradient sm:my-32'>
       <div className='pb-20 sm:pb-24 xl:pb-0'>
         <div className='flex flex-col items-center px-6 mx-auto max-w-7xl gap-x-8 gap-y-10 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch'>
           <div className='w-full max-w-2xl -mt-8 xl:-mb-8 xl:w-96 xl:flex-none'>
@@ -94,7 +26,7 @@ export const AboutSlavina = () => {
                 />
                 <use href='#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb' x={86} />
               </svg>
-              <blockquote className='text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9'>
+              <blockquote className='text-xl font-semibold leading-8 text-white sm:leading-9'>
                 <p>
                   Ние сме момичета, обединени от страстта към красотата и
                   изкуството на плетенето. С креативност и любов създаваме
@@ -106,7 +38,7 @@ export const AboutSlavina = () => {
                 </p>
               </blockquote>
               <figcaption className='mt-8 text-base'>
-                <div className='font-semibold text-white'>Славина</div>
+                <div className='font-semibold text-white'>Боряна и Славина</div>
               </figcaption>
             </figure>
           </div>

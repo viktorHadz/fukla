@@ -19,7 +19,7 @@ export const BraidsHero = () => {
             />
 
             {/* Hover Overlay */}
-            <div className='absolute inset-0 flex items-center justify-center bg-[#E95D7A]/80 opacity-0 group-hover:opacity-100 transition duration-300'>
+            <div className='absolute inset-0 flex items-center justify-center bg-pinkv/80 opacity-0 group-hover:opacity-100 transition duration-300'>
               <h2 className='text-lg font-semibold text-center text-white'>
                 {process === 1
                   ? 'Прецизна подготовка'

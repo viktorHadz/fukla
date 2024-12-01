@@ -54,7 +54,7 @@ export const ServiceSection = () => {
         {/* Services Section */}
         <div className='px-6 mx-auto mt-4 max-w-7xl sm:mt-12 lg:px-8'>
           <div className='max-w-4xl mx-auto text-center'>
-            <h1 className='text-base font-semibold leading-7 text-[#e95d7a]'>
+            <h1 className='text-base font-semibold leading-7 text-pinkv'>
               Нашите Услуги
             </h1>
           </div>
@@ -63,7 +63,7 @@ export const ServiceSection = () => {
             {services.map((service) => (
               <div
                 key={service.id}
-                className='relative p-6 transition-all duration-300 ease-in-out bg-white border border-transparent rounded-lg shadow-lg hover:border-[#e95d7a] hover:shadow-xl hover:scale-105'
+                className='relative p-6 transition-all duration-300 ease-in-out bg-white border border-transparent rounded-lg shadow-lg hover:border-pinkv hover:shadow-xl hover:scale-105'
               >
                 <h3 className='mt-4 text-lg font-semibold text-gray-900'>
                   {service.name}
@@ -72,14 +72,14 @@ export const ServiceSection = () => {
                 <ul className='mt-4 space-y-2'>
                   {service.features.map((feature, index) => (
                     <li key={index} className='flex items-center'>
-                      <span className='w-2 h-2 mr-2 bg-[#e95d7a] rounded-full'></span>
+                      <span className='w-2 h-2 mr-2 bg-pinkv rounded-full'></span>
                       {feature}
                     </li>
                   ))}
                 </ul>
                 <Link
                   to={service.href}
-                  className='inline-block mt-6 text-sm font-semibold text-[#e95d7a] hover:underline'
+                  className='inline-block mt-6 text-sm font-semibold text-pinkv hover:underline'
                 >
                   Прочети повече
                 </Link>

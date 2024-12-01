@@ -50,7 +50,6 @@ export const Header = () => {
         <Link to='/braids' className={linkStyles}>
           Плитки
         </Link>
-        {/* <Link to="/makeup" className={linkStyles}>Грим</Link> */}
         <Link to='/nails' className={linkStyles}>
           Нокти
         </Link>

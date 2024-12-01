@@ -2,58 +2,55 @@ import { scrollToElement } from '../../common/scrollToElement';
 
 export const TattooBanner = () => {
   const handleScroll = () => {
-    scrollToElement('tattoo-welcome');
+    const desktop = document.getElementById('take-a-look-desktop');
+    const mobile = document.getElementById('take-look');
+
+    if (desktop && desktop.offsetParent !== null) {
+      scrollToElement('take-a-look-desktop');
+    } else if (mobile && mobile.offsetParent !== null) {
+      scrollToElement('take-look');
+    } else {
+      console.error('No visible element to scroll to');
+    }
   };
+
   return (
-    <div className='w-full h-[400px] md:h-[400px] lg:h-[600px] bg-zinc-900 relative overflow-hidden mt-20 cursor-default'>
-      {/* Full-height centered image */}
+    <div className='w-full h-[500px] lg:h-[600px] bg-dark-gradient relative overflow-hidden mt-20 cursor-default flex items-center justify-center'>
+      {/* Background Image */}
       <div
-        className='absolute top-0 bottom-0 left-1/2 transform -translate-x-1/2 w-[50%] sm:w-[25%] bg-cover bg-center'
+        className='absolute top-0 flex w-[50%] md:w-[30%] h-full mb-10 bg-center'
         style={{
-          backgroundImage: `url('images/home/braid-thread.webp')`,
-          opacity: '60%',
+          backgroundImage: `url('/images/tattoo/tattooBanner.webp')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          opacity: '50%',
+          loading: 'eager',
         }}
       >
         <div
           className='absolute inset-0'
           style={{
-            backgroundColor: 'rgba(255,25,71, 0.4)', // Pink color with 40% opacity
-            pointerEvents: 'none', // Ensures this layer does not interfere with interactions
+            backgroundColor: 'rgba(255,25,71, 0.3)', // Pink overlay with 40% opacity
+            pointerEvents: 'none',
           }}
         ></div>
       </div>
 
-      {/* Content container */}
-      <div className='relative z-10 grid h-full grid-cols-3 sm:grid-cols-5 '>
-        {/* Left Logo */}
-        <div className='items-center justify-center hidden col-span-1 sm:flex '>
-          <p className='mt-16 text-xl font-bold text-[#e95d7a] md:text-4xl lg:text-5xl 2xl:text-6xll'>
-            FUKLA
-          </p>
-        </div>
-
-        {/* Central Content */}
-        <div className='flex flex-col items-center justify-center col-span-3 text-center'>
-          <h1 className='text-4xl font-bold tracking-widest text-white uppercase sm:text-4xl md:text-5xl lg:text-7xl 2xl:text-9xl'>
-            ВРЕМЕННО ТАТУ
-          </h1>
-          <p className='mt-4 text-2xl font-medium tracking-widest text-white lg:text-3xl xl:text-4xl 2xl:text-5xl'>
-            БЪДИ СМЕЛА, БЪДИ УНИКАЛНА
-          </p>
-          <div
-            className='my-10 text-xs site-button xs:text-sm md:text-base lg:text-lg'
-            onClick={handleScroll}
-          >
-            <span>РАЗГЛЕДАЙ</span>
-          </div>
-        </div>
-
-        {/* Right Logo */}
-        <div className='items-center justify-center hidden col-span-1 sm:flex'>
-          <p className='mt-16 text-xl font-bold text-[#e95d7a] md:text-4xl lg:text-5xl 2xl:text-6xl'>
-            FUKLA
-          </p>
-        </div>
+      {/* Content */}
+      <div className='relative z-10 flex flex-col items-center px-4 text-center'>
+        <h1 className='text-4xl font-bold tracking-tight text-white uppercase sm:text-6xl'>
+          Временно Тату Джагуа
+        </h1>
+        <p className='mt-6 text-lg leading-8 text-white uppercase'>
+          бъди смела, бъди уникална
+        </p>
+        <button
+          className='my-8 text-xs site-button-alt xs:text-sm md:text-base lg:text-lg'
+          onClick={handleScroll}
+        >
+          РАЗГЛЕДАЙ
+        </button>
       </div>
     </div>
   );

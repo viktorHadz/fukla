@@ -2,43 +2,65 @@ const braids = [
   {
     name: 'Класическа плитка',
     undertext: 'Вечната класика с модерен нюанс.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    imageUrl: '/images/braids/classicBraids.webp',
     bio: 'Елегантността никога не излиза от мода. Този стил е перфектен за официални поводи или ежедневен шик.',
   },
   {
     name: 'Боксьорски плитки:',
     undertext: 'Нов начин да изглеждате уверени.',
-    imageUrl: '/images/braids/braidsHero2WhiteGirl.webp',
+    imageUrl: '/images/braids/boxerBraids.webp',
     bio: 'Смели и забележителни, тези плитки комбинират практичност с модерна естетика, подходящи за всеки динамичен ден.',
   },
 
   {
     name: '„Диадема“ разновидности',
     undertext: 'Добавете нотка приказност.',
-    imageUrl: '/images/braids/braidsHero2WhiteGirl.webp',
+    imageUrl: '/images/braids/diademBraids.webp',
     bio: 'Тези плитки обграждат лицето ви като красива корона, подчертавайки вашата естествена красота.',
   },
   {
     name: 'Опашка от пълзящи плитки',
     undertext: 'Динамика, която привлича погледи.',
-    imageUrl: '/images/braids/braidsHero2WhiteGirl.webp',
+    imageUrl: '/images/braids/crawlingBraidsTail.webp',
     bio: 'Изберете стил, който съчетава свобода и изящество – подходящ както за ежедневието, така и за вечерни излизания.',
   },
   {
-    name: 'Къдрици/Туистъри',
+    name: 'Туистъри',
     undertext: 'Добавете движение и обем.',
-    imageUrl: '/images/braids/braidsHero2WhiteGirl.webp',
+    imageUrl: '/images/braids/twisterBraids.webp',
     bio: 'Този стил е за тези, които обичат да експериментират с текстури и игривост във визията си.',
   },
   {
     name: 'Афроплитки',
     undertext: 'Където културата среща модерното.',
-    imageUrl: '/images/braids/braidsHero2WhiteGirl.webp',
+    imageUrl: '/images/braids/afroBraids.webp',
     bio: 'Тези плитки са не само стилен избор, но и начин да носите част от историята и традициите.',
   },
+  {
+    name: 'Къдрици.',
+    undertext: 'Когато искаш нещо специално.',
+    imageUrl: '/images/braids/curls.webp',
+    bio: 'Превърнете своята визия в реалност! Заедно създаваме плитки, които отразяват вашия стил и индивидуалност – уникални, точно като вас.',
+  },
+  {
+    name: 'Пълзящи плитки.',
+    undertext: 'Когато искаш нещо специално.',
+    imageUrl: '/images/braids/crawlingBraids.webp',
+    bio: 'Превърнете своята визия в реалност! Заедно създаваме плитки, които отразяват вашия стил и индивидуалност – уникални, точно като вас.',
+  },
+  {
+    name: 'Fukla Плитки',
+    undertext: 'Когато искаш нещо специално.',
+    imageUrl: '/images/braids/braidsPricing.webp',
+    bio: 'The secret to great style, is to feel good in what you wear.',
+  },
+  {
+    name: 'Дизайн по твоя идея.',
+    undertext: 'Когато искаш нещо специално.',
+    imageUrl: '/images/braids/braidsHero2WhiteGirl.webp',
+    bio: 'Превърнете своята визия в реалност! Заедно създаваме плитки, които отразяват вашия стил и индивидуалност – уникални, точно като вас.',
+  },
 ];
-
 export const BraidStyles = () => {
   return (
     <div className='py-24 bg-dark-gradient sm:py-32'>
@@ -53,7 +75,7 @@ export const BraidStyles = () => {
             елегантна индивидуалност.
           </p>
         </div>
-        <ul
+        <div
           role='list'
           className='grid max-w-2xl grid-cols-1 mx-auto mt-20 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none'
         >
@@ -68,7 +90,7 @@ export const BraidStyles = () => {
                 <h3 className='text-lg font-semibold leading-8 tracking-tight text-white'>
                   {braid.name}
                 </h3>
-                <p className='text-base leading-7 text-[#e95d7a]'>
+                <p className='text-base leading-7 text-pinkv'>
                   {braid.undertext}
                 </p>
                 <p className='mt-6 text-base leading-7 text-gray-300'>
@@ -77,7 +99,7 @@ export const BraidStyles = () => {
               </div>
             </li>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

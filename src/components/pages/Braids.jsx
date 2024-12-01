@@ -4,7 +4,6 @@ import { BraidsHero1 } from './braids/BraidsHero1.jsx';
 import { BraidsHero2 } from './braids/BraidsHero2.jsx';
 import { BraidStyles } from './braids/BraidsStyles.jsx';
 import { PricingAndGallery } from './braids/PricingAndGallery.jsx';
-import { AboutBoryana } from './braids/aboutBoryana.jsx';
 import { AboutSlavina } from './braids/aboutSlavina.jsx';
 import { FAQ } from './braids/FAQ.jsx';
 export const Braids = () => {
@@ -16,7 +15,6 @@ export const Braids = () => {
       <BraidsHero2 />
       <BraidStyles />
       <PricingAndGallery />
-      <AboutBoryana />
       <AboutSlavina />
       <FAQ />
     </>

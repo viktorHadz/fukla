@@ -1,8 +1,9 @@
 import { NailsBanner } from './nails/NailsBanner';
-import { NailsHero } from './nails/NailsHero';
-import { NailsWelcome } from './nails/NailsWelcome';
-import { NailsPortfolio } from './nails/NailsPortfolio';
-import { NailsPricing } from './nails/NailsPricing';
+import { NailsHero1 } from './nails/NailsHero1';
+import { NailsStyles } from './nails/NailsStyles';
+import { NailsAboutMe } from './nails/NailsAboutMe';
+import { FAQ } from './nails/NailsFAQ';
+
 import ScrollToTopOnMount from '../ScrollToTopOnMount';
 
 export const Nails = () => {
@@ -10,10 +11,10 @@ export const Nails = () => {
     <>
       <ScrollToTopOnMount />
       <NailsBanner />
-      <NailsHero />
-      <NailsWelcome />
-      <NailsPortfolio />
-      <NailsPricing />
+      <NailsHero1 />
+      <NailsStyles />
+      <NailsAboutMe />
+      <FAQ />
     </>
   );
 };

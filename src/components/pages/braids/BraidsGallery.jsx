@@ -58,7 +58,7 @@ const BraidsGallery = ({ isGalleryOpen }) => {
           );
 
           setPreloadedImages(nextImages);
-          nextPageTokenRef.current = result.nextPageToken || null;
+          nextPageTokenRef.current = result.nextPageToken;
         }
       };
 
@@ -124,7 +124,7 @@ const BraidsGallery = ({ isGalleryOpen }) => {
         ))}
       </div>
       {nextPageTokenRef.current && (
-        <button onClick={loadMoreImages} className='mt-4 site-button'>
+        <button onClick={loadMoreImages} className='mt-4 site-button-alt'>
           Зареди още
         </button>
       )}

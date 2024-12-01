@@ -35,7 +35,7 @@ export const ScrollTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className='p-2 text-gray-800 bg-white rounded-full shadow-lg focus:outline-none hover:text-[#E95D7A]'
+          className='p-2 text-gray-800 bg-white rounded-full shadow-lg focus:outline-none hover:text-pinkv'
         >
           <ChevronUpIcon className='w-8 h-8' />
         </button>

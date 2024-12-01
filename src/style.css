@@ -30,11 +30,11 @@ html {
 }
 
 .site-button {
-  @apply relative rounded-md py-2 px-6 text-sm font-medium text-white border border-white hover:border-[#fda7bf] bg-transparent transition-all duration-300 hover:animate-glow hover:bg-gradient-to-r hover:from-[#fda7bf] hover:to-[#e95d7a] focus:outline-none focus:ring-2 focus:ring-[#fda7bf] active:scale-95;
+  @apply relative rounded-md py-2 px-6 text-sm font-medium text-white border border-white hover:border-[#fda7bf] bg-transparent transition-all duration-300 hover:animate-glow hover:bg-gradient-to-r hover:from-[#fda7bf] hover:to-pinkv focus:outline-none focus:ring-2 focus:ring-[#fda7bf] active:scale-95;
 }
 .site-button-alt {
   @apply relative rounded-md py-2 px-6 text-sm font-medium text-white 
-    bg-gradient-to-r from-[#fda7bf] via-[#df5179] to-[#e95d7a] 
+    bg-gradient-to-r from-[#fda7bf] via-[#df5179] to-pinkv 
     bg-[length:200%_200%] hover:animate-shimmer
     animate-glow transition-transform duration-300 ease-in-out 
     hover:scale-105 active:scale-95 focus:outline-none 

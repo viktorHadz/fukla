@@ -78,6 +78,20 @@ export const ContactUs = () => {
                   </div>
                 </div>
               </div>
+              <div
+                id='sale-heading'
+                className='my-4 text-4xl font-bold tracking-tight text-white md:text-5xl'
+              >
+                Или запишете час{' '}
+                <a
+                  href='https://www.notino.bg/saloni/art-studio-fukla?source_caller=ui&shortlink=lbbsjxf8&c=salon_detail_redirect&pid=notino_partner&deep_link_value=https%3A%2F%2Fnotino.bg%2Fsaloni%2Fart-studio-fukla&af_xp=custom'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='hover:text-pinkv hover:underline'
+                >
+                  тук
+                </a>
+              </div>
             </div>
           </div>
         </div>

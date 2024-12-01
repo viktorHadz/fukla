@@ -53,7 +53,7 @@ export const DialogPopUp = ({
           <div className='flex items-center justify-center min-h-full p-4'>
             <DialogPanel
               transition
-              className='w-full max-w-md rounded-xl bg-white/15 p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0'
+              className='w-full max-w-[80vw] rounded-xl bg-white/15 p-6 backdrop-blur-2xl duration-300 ease-out data-[closed]:transform-[scale(95%)] data-[closed]:opacity-0'
             >
               <DialogTitle
                 as='h3'

@@ -8,15 +8,15 @@ export const Tails = () => {
       <div className='flex flex-col justify-around w-full sm:flex sm:flex-row'>
         {/*1 - Banner logo */}
         <div className='flex flex-col justify-center text-center text-white sm:text-left'>
-          <h1 className='text-[#e95d7a] text-6xl font-extrabold hidden lg:block'>
+          <h1 className='text-pinkv text-6xl font-extrabold hidden lg:block'>
             Fukla
           </h1>
           <span className='my-4'>
             <p className='text-4xl font-semibold '>Красота с характер</p>
             <p className='text-sm italic quote-text xs:text-base sm:text-lg md:text-xl lg:text-2xl'>
-              - "Бъди <span className='text-[#e95d7a]'>дръзка</span>, бъди{' '}
-              <span className='text-[#e95d7a]'>уникална</span>, бъди
-              <span className='text-[#e95d7a]'> Фукла</span>
+              - "Бъди <span className='text-pinkv'>дръзка</span>, бъди{' '}
+              <span className='text-pinkv'>уникална</span>, бъди
+              <span className='text-pinkv'> Фукла</span>
               !"
             </p>
           </span>

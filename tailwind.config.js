@@ -7,6 +7,9 @@ module.exports = {
         xs: '300px',
         '4xl': '2000px',
       },
+      colors: {
+        pinkv: '#e95d7a',
+      },
       backgroundImage: {
         'very-white-gradient':
           'radial-gradient(circle, #ffffff, #fefdff, #fefcfe, #fefafd, #fef8fb, #fef6f9, #fff4f7, #fff2f5, #ffeff3, #ffecf0, #ffe9ee, #ffe6ec)',

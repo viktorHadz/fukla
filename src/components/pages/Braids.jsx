@@ -23,7 +23,6 @@ export const Braids = () => {
         { maxResults: 6 }
       );
       setInitialImages(images);
-      console.log(images);
       nextPageTokenRef.current = nextPageToken;
     };
 

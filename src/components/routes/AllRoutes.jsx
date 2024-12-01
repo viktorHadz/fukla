@@ -4,7 +4,6 @@ import { Braids } from '../pages/Braids';
 import { Tattoo } from '../pages/Tattoo';
 import { Extensions } from '../pages/Extensions';
 import { Nails } from '../pages/Nails';
-// import { Gallery } from '../pages/Gallery';
 
 export const AllRoutes = () => {
   const location = useLocation();
@@ -15,7 +14,6 @@ export const AllRoutes = () => {
       <Route path='/tattoo' element={<Tattoo />}></Route>
       <Route path='/extensions' element={<Extensions />}></Route>
       <Route path='/nails' element={<Nails />}></Route>
-      {/* <Route path='/gallery' element={<Gallery />}></Route> */}
     </Routes>
   );
 };

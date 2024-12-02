@@ -1,3 +1,4 @@
+import { ScrollToTopOnMount } from '../ScrollToTopOnMount';
 import { ExtensionsBanner } from './extensions/ExtensionsBanner';
 import { ExtensionsHero1 } from './extensions/ExtensionsHero1';
 import { ExtensionsStyles } from './extensions/ExtensionsStyles';

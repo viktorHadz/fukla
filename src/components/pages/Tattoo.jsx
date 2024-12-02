@@ -1,4 +1,4 @@
-import { ScrollToTopOnMount } from '../ScrollToTopOnMount';
+import ScrollToTopOnMount from '../ScrollToTopOnMount';
 import { TattooBanner } from './tattoo/TattooBanner';
 import { TattooHero1 } from './tattoo/TattooHero1';
 import { TattooStyles } from './tattoo/TattooStyles';

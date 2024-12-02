@@ -5,7 +5,7 @@ const features = [
     icon: '/images/home/icons/braids.svg',
   },
   {
-    name: 'Прежда за Плитки',
+    name: 'Изкуствена Коса - Канекалон',
 
     description: 'Разнообразие от цветове и текстури.',
     icon: '/images/home/icons/extensions.svg',

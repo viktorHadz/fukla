@@ -32,7 +32,12 @@ export const Menu = () => {
         </li>
         <li className='menu__toggle__item'>
           <Link className='menu__toggle__link' to='/nails'>
-            Маникюр
+            Нокти
+          </Link>
+        </li>
+        <li className='menu__toggle__item'>
+          <Link className='menu__toggle__link' to='/tattoo'>
+            Тату
           </Link>
         </li>
         <li className='menu__toggle__item'>

@@ -52,23 +52,23 @@ export const ExtensionsHero1 = () => {
               >
                 <div className='w-full max-w-xl lg:shrink-0 xl:max-w-2xl'>
                   <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
-                    Добавете дължина и обем с лекота.
+                    Преобразете визията си със синтетични опашки
                   </h1>
                   <p className='relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none'>
-                    Удълженията за коса са идеалното решение за промяна на
-                    вашата визия. Те са достъпен и лесен начин да постигнете
-                    дължина, обем или акценти в прическата. Изберете между
-                    синтетични и естествени варианти, за да намерите
-                    най-подходящото за вас. Нашите удължения са практични,
-                    удобни за поддръжка и създадени да изглеждат естествено. С
-                    тях всяка прическа става възможна!
+                    Синтетичните опашки са перфектното решение за бърза и стилна
+                    промяна на вашата визия. Те предлагат лесен и достъпен начин
+                    да добавите дължина и обем към прическата си, без
+                    ангажимента на постоянни удължения. Нашите синтетични опашки
+                    са изработени така, че да изглеждат естествено, лесни са за
+                    поставяне и поддръжка. С тях всяка визия е постижима – от
+                    ежедневна до елегантна!
                   </p>
                 </div>
                 <div className='flex justify-end gap-8 mt-14 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0'>
                   <div className='flex-none pt-32 ml-auto space-y-8 w-44 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80'>
                     <div className='relative'>
                       <img
-                        src='/images/extensions/brownExtensionWithHand.webp'
+                        src='/images/extensions/blondeExtensionWithHand.webp'
                         alt=''
                         className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                       />
@@ -86,7 +86,7 @@ export const ExtensionsHero1 = () => {
                     </div>
                     <div className='relative'>
                       <img
-                        src='/images/extensions/extScissors.webp'
+                        src='/images/extensions/pinkBraidSynth.webp'
                         alt=''
                         className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                       />
@@ -96,8 +96,8 @@ export const ExtensionsHero1 = () => {
                   <div className='flex-none pt-32 space-y-8 w-44 sm:pt-0'>
                     <div className='relative'>
                       <img
-                        src='/images/extensions/extBlondeOnPink.webp'
-                        alt=''
+                        src='/images/extensions/brownExtensionWithHand.webp'
+                        alt='brown synthetic hair'
                         className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                       />
                       <div className='absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10' />

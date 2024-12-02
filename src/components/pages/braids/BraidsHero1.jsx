@@ -93,7 +93,7 @@ export const BraidsHero1 = () => {
                   <div className='flex-none pt-32 space-y-8 w-44 sm:pt-0'>
                     <div className='relative'>
                       <img
-                        src='/images/braids/braidsHero2SlavinaR.webp'
+                        src='/images/braids/blondeBoy.webp'
                         alt=''
                         className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
                       />

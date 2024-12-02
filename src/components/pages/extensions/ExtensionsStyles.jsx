@@ -4,19 +4,19 @@ const features = [
   {
     name: 'Дълготрайна естественост.',
     description:
-      'Нашите удължения изглеждат напълно естествено и придават обем и дължина, които ще обикнете.',
+      'Нашите синтетични опашки са създадени да изглеждат напълно естествено, придавайки на косата ви обем и дължина, които ще обикнете.',
     icon: ArrowRightIcon,
   },
   {
     name: 'Безупречен комфорт.',
     description:
-      'Изработени от висококачествени материали, удълженията се усещат леки и удобни през целия ден.',
+      'Изработени от висококачествени материали, нашите опашки са леки, удобни и подходящи за носене през целия ден.',
     icon: ArrowRightIcon,
   },
   {
     name: 'Множество възможности.',
     description:
-      'Разгърнете въображението си с различни стилове, текстури и цветове, създадени специално за вас.',
+      'Изберете от разнообразие от стилове, текстури и цветове, за да откриете перфектния аксесоар за вашата визия.',
     icon: ArrowRightIcon,
   },
 ];
@@ -28,19 +28,19 @@ export const ExtensionsStyles = () => {
         <div className='relative px-6 py-20 overflow-hidden bg-dark-gradient isolate sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24'>
           <div className='grid max-w-md mx-auto gap-y-8 sm:max-w-lg sm:gap-y-10 sm:px-4 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0 lg:gap-x-6'>
             <div className='lg:row-start-2 lg:max-w-md'>
-              <h2 className='text-xl font-bold tracking-tight text-white sm:text-2xl'>
-                Преобразете визията си <br /> с удължения за коса.
+              <h2 className='text-2xl font-bold tracking-tight text-white sm:text-4xl'>
+                Създайте визия за секунди
               </h2>
               <p className='mt-4 text-sm leading-6 text-gray-300 sm:text-base sm:leading-7'>
-                Удълженията за коса са идеалното решение за преобразяване на
-                вашата визия. Добавете дължина, обем или създайте нов стил,
-                който подчертава вашата индивидуалност. С висококачествени
-                материали и естествен вид, те са перфектният избор за всяка
-                дама, която иска да изрази себе си по нов начин.
+                Синтетичните опашки са перфектното решение за добавяне на стил и
+                индивидуалност към вашата визия. Поставят се лесно и без усилие,
+                без нужда от професионална намеса. Високото качество гарантира
+                естествен вид и удобство, които ще ви накарат да се чувствате
+                уверени във всяка ситуация.
               </p>
             </div>
             <img
-              src='/images/extensions/purpleGirl.webp'
+              src='/images/extensions/syntheticTail.webp'
               alt='Featured temporary tattoo screenshot'
               className='w-[12rem] max-w-full rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[18rem] md:w-[18rem] lg:row-span-4 lg:w-[24rem] lg:ml-auto lg:-mr-16 lg:overflow-hidden'
             />

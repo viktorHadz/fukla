@@ -24,7 +24,7 @@ const services = [
   {
     name: 'Временни Татуировки',
     id: 'service-temp-tattoos',
-    href: '/tattoos',
+    href: '/tattoo',
     description:
       'Временните татуировки са начин да изразите своята креативност и уникалност, без да правите постоянен ангажимент.',
     features: [
@@ -34,7 +34,7 @@ const services = [
     ],
   },
   {
-    name: 'Прежда за Плитки',
+    name: 'Изкуствена Коса',
     id: 'service-braid-thread',
     href: '/braid-thread',
     description:
@@ -72,7 +72,7 @@ export const ServiceSection = () => {
                 <ul className='mt-4 space-y-2'>
                   {service.features.map((feature, index) => (
                     <li key={index} className='flex items-center'>
-                      <span className='w-2 h-2 mr-2 bg-pinkv rounded-full'></span>
+                      <span className='w-2 h-2 mr-2 rounded-full bg-pinkv'></span>
                       {feature}
                     </li>
                   ))}

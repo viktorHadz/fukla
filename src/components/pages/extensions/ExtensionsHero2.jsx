@@ -21,13 +21,54 @@ export const ExtensionsHero2 = () => {
                   нужди.
                 </p>
               </div>
-              <div className='flow-root mt-16'>
-                <div className='inline-block w-full'>
-                  <img
-                    src='/images/home/braid-thread.webp'
-                    alt='synthetic hair extensions display'
-                    className='rounded-lg object-cover h-[30vh] w-full'
-                  />
+              <div className='flex justify-around mt-14'>
+                {/* order first */}
+                <div className='hidden pt-32 ml-auto space-y-8 sm:flex sm:flex-none w-44 sm:ml-0 lg:order-first sm:pt-36'>
+                  <div className='relative'>
+                    <img
+                      src='/images/extensions/humanSynth.webp'
+                      alt=''
+                      className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
+                    />
+                  </div>
+                </div>
+                {/* order second */}
+                <div className='flex-none pt-32 space-y-12 w-44 sm:pt-0'>
+                  <div className='relative'>
+                    <img
+                      src='/images/extensions/humanSynth2.webp'
+                      alt='brown synthetic hair'
+                      className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
+                    />
+                    <div className='absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10' />
+                  </div>
+                  <div className='relative'>
+                    <img
+                      src='/images/extensions/humanSynth3.webp'
+                      alt=''
+                      className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
+                    />
+                    <div className='absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10' />
+                  </div>
+                </div>
+                {/* order third */}
+                <div className='flex-none space-y-8 w-44 sm:mr-0 sm:pt-36'>
+                  <div className='relative'>
+                    <img
+                      src='/images/extensions/humanSynth4.webp'
+                      alt=''
+                      className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
+                    />
+                    <div className='absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10' />
+                  </div>
+                  <div className='relative'>
+                    <img
+                      src='/images/extensions/humanSynth5.webp'
+                      alt=''
+                      className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
+                    />
+                    <div className='absolute inset-0 pointer-events-none rounded-xl ring-1 ring-inset ring-gray-900/10' />
+                  </div>
                 </div>
               </div>
             </div>

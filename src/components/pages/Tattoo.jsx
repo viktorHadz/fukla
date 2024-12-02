@@ -6,6 +6,7 @@ import { TattooFAQ } from './tattoo/TattooFAQ';
 export const Tattoo = () => {
   return (
     <>
+      <ScrollToTopOnMount />
       <TattooBanner />
       <TattooHero1 />
       <TattooStyles />

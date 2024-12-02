@@ -6,6 +6,7 @@ import { ExtensionsFAQ } from './extensions/ExtensionsFAQ';
 export const Extensions = () => {
   return (
     <>
+      <ScrollToTopOnMount />
       <ExtensionsBanner />
       <ExtensionsHero1 />
       <ExtensionsStyles />

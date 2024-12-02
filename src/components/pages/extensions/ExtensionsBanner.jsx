@@ -25,7 +25,6 @@ export const ExtensionsBanner = () => {
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           opacity: '50%',
-          loading: 'eager',
         }}
       >
         <div

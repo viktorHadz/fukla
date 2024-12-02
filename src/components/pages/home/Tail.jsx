@@ -8,7 +8,7 @@ export const Tails = () => {
       <div className='flex flex-col justify-around w-full sm:flex sm:flex-row'>
         {/*1 - Banner logo */}
         <div className='flex flex-col justify-center text-center text-white sm:text-left'>
-          <h1 className='text-pinkv text-6xl font-extrabold hidden lg:block'>
+          <h1 className='hidden text-6xl font-extrabold text-pinkv lg:block'>
             Fukla
           </h1>
           <span className='my-4'>
@@ -36,7 +36,6 @@ export const Tails = () => {
             src='images/home/small-banner-image.webp'
             className='absolute object-contain -bottom-10 xs:w-40 sm:w-48 lg:w-64 2xl:w-72'
             alt='Right-side banner'
-            loading='eager'
           />
         </div>
 
